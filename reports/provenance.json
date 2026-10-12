@@ -1,0 +1,23 @@
+{
+  "url": "https://archive.ics.uci.edu/static/public/791/metropt+3+dataset.zip",
+  "retrieved_utc": "2026-10-12T22:20:57.065703+00:00",
+  "doi": "10.24432/C5VW3R",
+  "license": "CC BY 4.0",
+  "files": [
+    {
+      "file": "data/raw/Data Description_Metro.pdf",
+      "bytes": 81208,
+      "sha256": "b00fac0e8899854078309bef4adaa480d82ecf14dc81c5097c3646973e824127"
+    },
+    {
+      "file": "data/raw/MetroPT3(AirCompressor).csv",
+      "bytes": 218300507,
+      "sha256": "db30ccb4ea402e3c8bf2c99db06e288d4f2a772f6928f9dbe26a920d69793e24"
+    },
+    {
+      "file": "data/raw/metropt3.zip",
+      "bytes": 218381995,
+      "sha256": "aab991a970e58210de853bb8078ce0e63abb4d9412fdc5c79792dae3d8e1721a"
+    }
+  ]
+}

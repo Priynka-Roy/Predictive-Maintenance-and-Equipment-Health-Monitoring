@@ -1,0 +1,18 @@
+{
+  "seed": 42,
+  "resample": "5min",
+  "rolling_windows": [
+    3,
+    12
+  ],
+  "train_end": "2020-03-01",
+  "validation_end": "2020-05-01",
+  "alert_quantile": 0.995,
+  "candidate_max_samples": [
+    256,
+    1024
+  ],
+  "n_estimators": 200,
+  "persistence_bins": 3,
+  "lead_window_hours": 24
+}

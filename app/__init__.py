@@ -1,0 +1,1 @@
+"""IndustrialGuard AI application."""
