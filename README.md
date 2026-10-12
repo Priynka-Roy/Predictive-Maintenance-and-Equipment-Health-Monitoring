@@ -4,7 +4,7 @@
 
 IndustrialGuard AI turns real metro air-compressor telemetry into an interactive historical condition-monitoring application. It combines causal time-series features, an interpretable statistical baseline, Isolation Forest, chronological evaluation, and transparent explanations. The project demonstrates applied statistics and industrial analytics while keeping the boundary between an anomaly and a documented failure explicit.
 
-[Repository](https://github.com/Enamul22/industrialguard-ai) · [Case study](docs/PORTFOLIO_CASE_STUDY.md) · [Methodology](docs/METHODOLOGY.md) · [Data card](docs/DATA_CARD.md) · [Deployment](docs/DEPLOYMENT.md)
+[Repository](https://github.com/Priynka-Roy/industrialguard-ai) · [Case study](docs/PORTFOLIO_CASE_STUDY.md) · [Methodology](docs/METHODOLOGY.md) · [Data card](docs/DATA_CARD.md) · [Deployment](docs/DEPLOYMENT.md)
 
 ## Industrial problem
 

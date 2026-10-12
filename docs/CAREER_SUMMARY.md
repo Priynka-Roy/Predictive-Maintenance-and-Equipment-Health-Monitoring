@@ -10,4 +10,4 @@
 
 IndustrialGuard AI is my end-to-end industrial analytics portfolio project using real MetroPT-3 compressor telemetry. I built a reproducible Python pipeline and interactive Streamlit dashboard with causal features, a robust baseline, Isolation Forest, chronological evaluation, and transparent signal-deviation explanations. The held-out results are intentionally reported without hype: the baseline detected one of three documented intervals, the selected forest detected none, and earlier warning was not demonstrated. The project highlights both practical data-science engineering and the statistical care needed when fault labels are sparse.
 
-Repository: https://github.com/Enamul22/industrialguard-ai
+Repository: https://github.com/Priynka-Roy/industrialguard-ai
