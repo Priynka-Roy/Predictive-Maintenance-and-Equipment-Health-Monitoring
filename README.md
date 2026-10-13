@@ -54,7 +54,9 @@ Only three final-test intervals are available. Unannotated alerts are not confir
 
 ![Chronological model evaluation](docs/assets/performance.jpg)
 
-The historical demonstration runs locally. A verified public Streamlit deployment URL is not currently recorded.
+**[Open the local app in your browser](http://localhost:8501)**
+
+Start the app using the instructions below before clicking this link. `localhost` refers to the reader’s own computer; it is not a public hosted demo.
 
 ## Run the committed demonstration
 
@@ -66,6 +68,8 @@ source .venv/bin/activate
 python -m pip install -e '.[dev]'
 streamlit run streamlit_app.py
 ```
+
+After starting Streamlit, open **[http://localhost:8501](http://localhost:8501)** in your browser.
 
 Windows: activate `.venv\Scripts\activate`. The app loads precomputed real-data outputs and does not download the original CSV or retrain at startup.
 
