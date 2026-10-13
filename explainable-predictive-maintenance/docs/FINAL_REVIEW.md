@@ -14,10 +14,18 @@ Analytical verification covers training-only fits, feature causality, telemetry 
 
 ## Delivery and operation
 
-Existing public repository: [Priynka-Roy/industrialguard-explainable-predictive-maintenance](https://github.com/Priynka-Roy/industrialguard-explainable-predictive-maintenance). Development branch: `feature/industrialguard-v2`. Publication uses the existing history, without force-pushing or replacing V1. PR/merge/tag and required-check state must be verified against GitHub at delivery rather than inferred from local files.
+Existing public repository: [Priynka-Roy/industrialguard-explainable-predictive-maintenance](https://github.com/Priynka-Roy/industrialguard-explainable-predictive-maintenance). Development branch: `feature/industrialguard-v2`. Publication uses the existing history, without force-pushing or replacing V1. [Pull request #1](https://github.com/Priynka-Roy/industrialguard-explainable-predictive-maintenance/pull/1) passed both GitHub Actions checks and was merged into `main` on October 13, 2026. The completed V2 is preserved by `v2.0.0`; `v1.0.0` remains unchanged. No V2 history rewrite or force-push was used.
 
 [Local app](http://localhost:8501) requires Streamlit running on the reader’s machine. No public hosted URL has been verified. Streamlit Community Cloud still requires the owner’s sign-in, repository authorization and terms acceptance. [Deployment instructions](DEPLOYMENT.md) provide the subdirectory entry point and installation commands.
 
 ## Residual limitations and next evidence
 
 One machine, few imperfect fault reports, correlated observations, approximate regimes and previously inspected benchmark data limit inference. Workload targets are portfolio assumptions. Expert-reviewed labels, prospective collection, independent equipment and real maintenance costs are the next evidence priorities. [Full limitations](LIMITATIONS.md), [computed results](V2_RESULTS.md) and [metric definitions](EVALUATION_DEFINITIONS.md) explain the practical boundaries.
+
+## Final perspectives
+
+- Applied statistics: no blocking leakage defect; empirical limits avoid an unsupported Gaussian assumption, and sparse dependent failures prevent precise generalization claims.
+- Industrial analytics: guided real cases connect pressure/current/temperature patterns with monitoring context; labels and equipment regimes remain approximate.
+- ML engineering: 62 local and CI tests, portable source, versioned artifacts, data/config/source hashes and an independently reproduced selection support maintainability.
+- Reliability: the selected model misses the development event and raises benchmark workload; no certified inspection, failure probability or cost-saving claim is supported.
+- Hiring perspective: the contribution is reproducible statistical engineering and honest evaluation; external equipment validation is the principal next evidence requirement.
