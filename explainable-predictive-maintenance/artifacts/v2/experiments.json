@@ -1,0 +1,4938 @@
+[
+  {
+    "experiment_id": "robust_original_q0.98_p1",
+    "fold": "early_development",
+    "model_id": "robust_original",
+    "model_type": "robust",
+    "feature_set": "original",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Reservoirs",
+      "Oil_temperature",
+      "Motor_current",
+      "COMP",
+      "DV_eletric",
+      "Towers",
+      "MPG",
+      "LPS",
+      "Pressure_switch",
+      "Oil_level",
+      "Caudal_impulses",
+      "pressure_difference",
+      "TP2_change",
+      "TP2_mean_3",
+      "TP2_std_3",
+      "TP2_mean_12",
+      "TP2_std_12",
+      "TP3_change",
+      "TP3_mean_3",
+      "TP3_std_3",
+      "TP3_mean_12",
+      "TP3_std_12",
+      "H1_change",
+      "H1_mean_3",
+      "H1_std_3",
+      "H1_mean_12",
+      "H1_std_12",
+      "DV_pressure_change",
+      "DV_pressure_mean_3",
+      "DV_pressure_std_3",
+      "DV_pressure_mean_12",
+      "DV_pressure_std_12",
+      "Reservoirs_change",
+      "Reservoirs_mean_3",
+      "Reservoirs_std_3",
+      "Reservoirs_mean_12",
+      "Reservoirs_std_12",
+      "Oil_temperature_change",
+      "Oil_temperature_mean_3",
+      "Oil_temperature_std_3",
+      "Oil_temperature_mean_12",
+      "Oil_temperature_std_12",
+      "Motor_current_change",
+      "Motor_current_mean_3",
+      "Motor_current_std_3",
+      "Motor_current_mean_12",
+      "Motor_current_std_12",
+      "load_transition"
+    ],
+    "feature_count": 52,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-03-20 00:00:00",
+    "evaluation_start": "2020-03-20 00:00:00",
+    "evaluation_end_exclusive": "2020-04-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": null,
+      "subsample": null,
+      "covariance_estimator": null
+    },
+    "quantile": 0.98,
+    "persistence_bins": 1,
+    "threshold": 927.7349419354837,
+    "regime_thresholds": {},
+    "fit_seconds": 0.013648915992234834,
+    "weekly_alert_fraction_sd": 0.0003695716082046873,
+    "complexity": 1,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 4,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 340,
+        "issued_alert_fraction": 0.011764705882352941
+      },
+      "off": {
+        "bins": 1408,
+        "issued_alert_fraction": 0.0
+      },
+      "transition": {
+        "bins": 506,
+        "issued_alert_fraction": 0.0
+      },
+      "unloaded": {
+        "bins": 684,
+        "issued_alert_fraction": 0.0
+      }
+    },
+    "evaluation": {
+      "start": "2020-03-20 00:00:00",
+      "end_exclusive": "2020-04-01 00:00:00",
+      "assigned_event_count": 0,
+      "event_count": 0,
+      "unobservable_events": 0,
+      "partial_events": 0,
+      "complete_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": null,
+      "alert_episodes": 4,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 4,
+      "unannotated_alert_episodes": 4,
+      "observed_days": 10.215277777777779,
+      "calendar_days": 12.0,
+      "unannotated_observed_days": 10.215277777777779,
+      "unannotated_alerts_per_observed_day": 0.39157036029911624,
+      "unannotated_alerts_per_calendar_day": 0.3333333333333333,
+      "alert_bin_fraction": 0.0013596193065941536,
+      "events": []
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "robust_original_q0.98_p3",
+    "fold": "early_development",
+    "model_id": "robust_original",
+    "model_type": "robust",
+    "feature_set": "original",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Reservoirs",
+      "Oil_temperature",
+      "Motor_current",
+      "COMP",
+      "DV_eletric",
+      "Towers",
+      "MPG",
+      "LPS",
+      "Pressure_switch",
+      "Oil_level",
+      "Caudal_impulses",
+      "pressure_difference",
+      "TP2_change",
+      "TP2_mean_3",
+      "TP2_std_3",
+      "TP2_mean_12",
+      "TP2_std_12",
+      "TP3_change",
+      "TP3_mean_3",
+      "TP3_std_3",
+      "TP3_mean_12",
+      "TP3_std_12",
+      "H1_change",
+      "H1_mean_3",
+      "H1_std_3",
+      "H1_mean_12",
+      "H1_std_12",
+      "DV_pressure_change",
+      "DV_pressure_mean_3",
+      "DV_pressure_std_3",
+      "DV_pressure_mean_12",
+      "DV_pressure_std_12",
+      "Reservoirs_change",
+      "Reservoirs_mean_3",
+      "Reservoirs_std_3",
+      "Reservoirs_mean_12",
+      "Reservoirs_std_12",
+      "Oil_temperature_change",
+      "Oil_temperature_mean_3",
+      "Oil_temperature_std_3",
+      "Oil_temperature_mean_12",
+      "Oil_temperature_std_12",
+      "Motor_current_change",
+      "Motor_current_mean_3",
+      "Motor_current_std_3",
+      "Motor_current_mean_12",
+      "Motor_current_std_12",
+      "load_transition"
+    ],
+    "feature_count": 52,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-03-20 00:00:00",
+    "evaluation_start": "2020-03-20 00:00:00",
+    "evaluation_end_exclusive": "2020-04-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": null,
+      "subsample": null,
+      "covariance_estimator": null
+    },
+    "quantile": 0.98,
+    "persistence_bins": 3,
+    "threshold": 927.7349419354837,
+    "regime_thresholds": {},
+    "fit_seconds": 0.013648915992234834,
+    "weekly_alert_fraction_sd": 0.0,
+    "complexity": 1,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 4,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 340,
+        "issued_alert_fraction": 0.0
+      },
+      "off": {
+        "bins": 1408,
+        "issued_alert_fraction": 0.0
+      },
+      "transition": {
+        "bins": 506,
+        "issued_alert_fraction": 0.0
+      },
+      "unloaded": {
+        "bins": 684,
+        "issued_alert_fraction": 0.0
+      }
+    },
+    "evaluation": {
+      "start": "2020-03-20 00:00:00",
+      "end_exclusive": "2020-04-01 00:00:00",
+      "assigned_event_count": 0,
+      "event_count": 0,
+      "unobservable_events": 0,
+      "partial_events": 0,
+      "complete_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": null,
+      "alert_episodes": 0,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 0,
+      "unannotated_alert_episodes": 0,
+      "observed_days": 10.215277777777779,
+      "calendar_days": 12.0,
+      "unannotated_observed_days": 10.215277777777779,
+      "unannotated_alerts_per_observed_day": 0.0,
+      "unannotated_alerts_per_calendar_day": 0.0,
+      "alert_bin_fraction": 0.0,
+      "events": []
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "robust_original_q0.995_p1",
+    "fold": "early_development",
+    "model_id": "robust_original",
+    "model_type": "robust",
+    "feature_set": "original",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Reservoirs",
+      "Oil_temperature",
+      "Motor_current",
+      "COMP",
+      "DV_eletric",
+      "Towers",
+      "MPG",
+      "LPS",
+      "Pressure_switch",
+      "Oil_level",
+      "Caudal_impulses",
+      "pressure_difference",
+      "TP2_change",
+      "TP2_mean_3",
+      "TP2_std_3",
+      "TP2_mean_12",
+      "TP2_std_12",
+      "TP3_change",
+      "TP3_mean_3",
+      "TP3_std_3",
+      "TP3_mean_12",
+      "TP3_std_12",
+      "H1_change",
+      "H1_mean_3",
+      "H1_std_3",
+      "H1_mean_12",
+      "H1_std_12",
+      "DV_pressure_change",
+      "DV_pressure_mean_3",
+      "DV_pressure_std_3",
+      "DV_pressure_mean_12",
+      "DV_pressure_std_12",
+      "Reservoirs_change",
+      "Reservoirs_mean_3",
+      "Reservoirs_std_3",
+      "Reservoirs_mean_12",
+      "Reservoirs_std_12",
+      "Oil_temperature_change",
+      "Oil_temperature_mean_3",
+      "Oil_temperature_std_3",
+      "Oil_temperature_mean_12",
+      "Oil_temperature_std_12",
+      "Motor_current_change",
+      "Motor_current_mean_3",
+      "Motor_current_std_3",
+      "Motor_current_mean_12",
+      "Motor_current_std_12",
+      "load_transition"
+    ],
+    "feature_count": 52,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-03-20 00:00:00",
+    "evaluation_start": "2020-03-20 00:00:00",
+    "evaluation_end_exclusive": "2020-04-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": null,
+      "subsample": null,
+      "covariance_estimator": null
+    },
+    "quantile": 0.995,
+    "persistence_bins": 1,
+    "threshold": 949.6866666666662,
+    "regime_thresholds": {},
+    "fit_seconds": 0.013648915992234834,
+    "weekly_alert_fraction_sd": 0.00027100271002710027,
+    "complexity": 1,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 4,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 340,
+        "issued_alert_fraction": 0.0029411764705882353
+      },
+      "off": {
+        "bins": 1408,
+        "issued_alert_fraction": 0.0
+      },
+      "transition": {
+        "bins": 506,
+        "issued_alert_fraction": 0.0
+      },
+      "unloaded": {
+        "bins": 684,
+        "issued_alert_fraction": 0.0
+      }
+    },
+    "evaluation": {
+      "start": "2020-03-20 00:00:00",
+      "end_exclusive": "2020-04-01 00:00:00",
+      "assigned_event_count": 0,
+      "event_count": 0,
+      "unobservable_events": 0,
+      "partial_events": 0,
+      "complete_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": null,
+      "alert_episodes": 1,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 1,
+      "unannotated_alert_episodes": 1,
+      "observed_days": 10.215277777777779,
+      "calendar_days": 12.0,
+      "unannotated_observed_days": 10.215277777777779,
+      "unannotated_alerts_per_observed_day": 0.09789259007477906,
+      "unannotated_alerts_per_calendar_day": 0.08333333333333333,
+      "alert_bin_fraction": 0.0003399048266485384,
+      "events": []
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "robust_original_q0.995_p3",
+    "fold": "early_development",
+    "model_id": "robust_original",
+    "model_type": "robust",
+    "feature_set": "original",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Reservoirs",
+      "Oil_temperature",
+      "Motor_current",
+      "COMP",
+      "DV_eletric",
+      "Towers",
+      "MPG",
+      "LPS",
+      "Pressure_switch",
+      "Oil_level",
+      "Caudal_impulses",
+      "pressure_difference",
+      "TP2_change",
+      "TP2_mean_3",
+      "TP2_std_3",
+      "TP2_mean_12",
+      "TP2_std_12",
+      "TP3_change",
+      "TP3_mean_3",
+      "TP3_std_3",
+      "TP3_mean_12",
+      "TP3_std_12",
+      "H1_change",
+      "H1_mean_3",
+      "H1_std_3",
+      "H1_mean_12",
+      "H1_std_12",
+      "DV_pressure_change",
+      "DV_pressure_mean_3",
+      "DV_pressure_std_3",
+      "DV_pressure_mean_12",
+      "DV_pressure_std_12",
+      "Reservoirs_change",
+      "Reservoirs_mean_3",
+      "Reservoirs_std_3",
+      "Reservoirs_mean_12",
+      "Reservoirs_std_12",
+      "Oil_temperature_change",
+      "Oil_temperature_mean_3",
+      "Oil_temperature_std_3",
+      "Oil_temperature_mean_12",
+      "Oil_temperature_std_12",
+      "Motor_current_change",
+      "Motor_current_mean_3",
+      "Motor_current_std_3",
+      "Motor_current_mean_12",
+      "Motor_current_std_12",
+      "load_transition"
+    ],
+    "feature_count": 52,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-03-20 00:00:00",
+    "evaluation_start": "2020-03-20 00:00:00",
+    "evaluation_end_exclusive": "2020-04-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": null,
+      "subsample": null,
+      "covariance_estimator": null
+    },
+    "quantile": 0.995,
+    "persistence_bins": 3,
+    "threshold": 949.6866666666662,
+    "regime_thresholds": {},
+    "fit_seconds": 0.013648915992234834,
+    "weekly_alert_fraction_sd": 0.0,
+    "complexity": 1,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 4,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 340,
+        "issued_alert_fraction": 0.0
+      },
+      "off": {
+        "bins": 1408,
+        "issued_alert_fraction": 0.0
+      },
+      "transition": {
+        "bins": 506,
+        "issued_alert_fraction": 0.0
+      },
+      "unloaded": {
+        "bins": 684,
+        "issued_alert_fraction": 0.0
+      }
+    },
+    "evaluation": {
+      "start": "2020-03-20 00:00:00",
+      "end_exclusive": "2020-04-01 00:00:00",
+      "assigned_event_count": 0,
+      "event_count": 0,
+      "unobservable_events": 0,
+      "partial_events": 0,
+      "complete_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": null,
+      "alert_episodes": 0,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 0,
+      "unannotated_alert_episodes": 0,
+      "observed_days": 10.215277777777779,
+      "calendar_days": 12.0,
+      "unannotated_observed_days": 10.215277777777779,
+      "unannotated_alerts_per_observed_day": 0.0,
+      "unannotated_alerts_per_calendar_day": 0.0,
+      "alert_bin_fraction": 0.0,
+      "events": []
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "robust_raw_q0.98_p1",
+    "fold": "early_development",
+    "model_id": "robust_raw",
+    "model_type": "robust",
+    "feature_set": "raw",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Reservoirs",
+      "Oil_temperature",
+      "Motor_current",
+      "COMP",
+      "DV_eletric",
+      "Towers",
+      "MPG",
+      "LPS",
+      "Pressure_switch",
+      "Oil_level",
+      "Caudal_impulses"
+    ],
+    "feature_count": 15,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-03-20 00:00:00",
+    "evaluation_start": "2020-03-20 00:00:00",
+    "evaluation_end_exclusive": "2020-04-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": null,
+      "subsample": null,
+      "covariance_estimator": null
+    },
+    "quantile": 0.98,
+    "persistence_bins": 1,
+    "threshold": 927.7349419354837,
+    "regime_thresholds": {},
+    "fit_seconds": 0.0032292499963659793,
+    "weekly_alert_fraction_sd": 0.0003695716082046873,
+    "complexity": 1,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 4,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 340,
+        "issued_alert_fraction": 0.011764705882352941
+      },
+      "off": {
+        "bins": 1408,
+        "issued_alert_fraction": 0.0
+      },
+      "transition": {
+        "bins": 506,
+        "issued_alert_fraction": 0.0
+      },
+      "unloaded": {
+        "bins": 684,
+        "issued_alert_fraction": 0.0
+      }
+    },
+    "evaluation": {
+      "start": "2020-03-20 00:00:00",
+      "end_exclusive": "2020-04-01 00:00:00",
+      "assigned_event_count": 0,
+      "event_count": 0,
+      "unobservable_events": 0,
+      "partial_events": 0,
+      "complete_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": null,
+      "alert_episodes": 4,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 4,
+      "unannotated_alert_episodes": 4,
+      "observed_days": 10.215277777777779,
+      "calendar_days": 12.0,
+      "unannotated_observed_days": 10.215277777777779,
+      "unannotated_alerts_per_observed_day": 0.39157036029911624,
+      "unannotated_alerts_per_calendar_day": 0.3333333333333333,
+      "alert_bin_fraction": 0.0013596193065941536,
+      "events": []
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "robust_raw_q0.98_p3",
+    "fold": "early_development",
+    "model_id": "robust_raw",
+    "model_type": "robust",
+    "feature_set": "raw",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Reservoirs",
+      "Oil_temperature",
+      "Motor_current",
+      "COMP",
+      "DV_eletric",
+      "Towers",
+      "MPG",
+      "LPS",
+      "Pressure_switch",
+      "Oil_level",
+      "Caudal_impulses"
+    ],
+    "feature_count": 15,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-03-20 00:00:00",
+    "evaluation_start": "2020-03-20 00:00:00",
+    "evaluation_end_exclusive": "2020-04-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": null,
+      "subsample": null,
+      "covariance_estimator": null
+    },
+    "quantile": 0.98,
+    "persistence_bins": 3,
+    "threshold": 927.7349419354837,
+    "regime_thresholds": {},
+    "fit_seconds": 0.0032292499963659793,
+    "weekly_alert_fraction_sd": 0.0,
+    "complexity": 1,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 4,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 340,
+        "issued_alert_fraction": 0.0
+      },
+      "off": {
+        "bins": 1408,
+        "issued_alert_fraction": 0.0
+      },
+      "transition": {
+        "bins": 506,
+        "issued_alert_fraction": 0.0
+      },
+      "unloaded": {
+        "bins": 684,
+        "issued_alert_fraction": 0.0
+      }
+    },
+    "evaluation": {
+      "start": "2020-03-20 00:00:00",
+      "end_exclusive": "2020-04-01 00:00:00",
+      "assigned_event_count": 0,
+      "event_count": 0,
+      "unobservable_events": 0,
+      "partial_events": 0,
+      "complete_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": null,
+      "alert_episodes": 0,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 0,
+      "unannotated_alert_episodes": 0,
+      "observed_days": 10.215277777777779,
+      "calendar_days": 12.0,
+      "unannotated_observed_days": 10.215277777777779,
+      "unannotated_alerts_per_observed_day": 0.0,
+      "unannotated_alerts_per_calendar_day": 0.0,
+      "alert_bin_fraction": 0.0,
+      "events": []
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "robust_raw_q0.995_p1",
+    "fold": "early_development",
+    "model_id": "robust_raw",
+    "model_type": "robust",
+    "feature_set": "raw",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Reservoirs",
+      "Oil_temperature",
+      "Motor_current",
+      "COMP",
+      "DV_eletric",
+      "Towers",
+      "MPG",
+      "LPS",
+      "Pressure_switch",
+      "Oil_level",
+      "Caudal_impulses"
+    ],
+    "feature_count": 15,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-03-20 00:00:00",
+    "evaluation_start": "2020-03-20 00:00:00",
+    "evaluation_end_exclusive": "2020-04-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": null,
+      "subsample": null,
+      "covariance_estimator": null
+    },
+    "quantile": 0.995,
+    "persistence_bins": 1,
+    "threshold": 949.6866666666662,
+    "regime_thresholds": {},
+    "fit_seconds": 0.0032292499963659793,
+    "weekly_alert_fraction_sd": 0.00027100271002710027,
+    "complexity": 1,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 4,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 340,
+        "issued_alert_fraction": 0.0029411764705882353
+      },
+      "off": {
+        "bins": 1408,
+        "issued_alert_fraction": 0.0
+      },
+      "transition": {
+        "bins": 506,
+        "issued_alert_fraction": 0.0
+      },
+      "unloaded": {
+        "bins": 684,
+        "issued_alert_fraction": 0.0
+      }
+    },
+    "evaluation": {
+      "start": "2020-03-20 00:00:00",
+      "end_exclusive": "2020-04-01 00:00:00",
+      "assigned_event_count": 0,
+      "event_count": 0,
+      "unobservable_events": 0,
+      "partial_events": 0,
+      "complete_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": null,
+      "alert_episodes": 1,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 1,
+      "unannotated_alert_episodes": 1,
+      "observed_days": 10.215277777777779,
+      "calendar_days": 12.0,
+      "unannotated_observed_days": 10.215277777777779,
+      "unannotated_alerts_per_observed_day": 0.09789259007477906,
+      "unannotated_alerts_per_calendar_day": 0.08333333333333333,
+      "alert_bin_fraction": 0.0003399048266485384,
+      "events": []
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "robust_raw_q0.995_p3",
+    "fold": "early_development",
+    "model_id": "robust_raw",
+    "model_type": "robust",
+    "feature_set": "raw",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Reservoirs",
+      "Oil_temperature",
+      "Motor_current",
+      "COMP",
+      "DV_eletric",
+      "Towers",
+      "MPG",
+      "LPS",
+      "Pressure_switch",
+      "Oil_level",
+      "Caudal_impulses"
+    ],
+    "feature_count": 15,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-03-20 00:00:00",
+    "evaluation_start": "2020-03-20 00:00:00",
+    "evaluation_end_exclusive": "2020-04-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": null,
+      "subsample": null,
+      "covariance_estimator": null
+    },
+    "quantile": 0.995,
+    "persistence_bins": 3,
+    "threshold": 949.6866666666662,
+    "regime_thresholds": {},
+    "fit_seconds": 0.0032292499963659793,
+    "weekly_alert_fraction_sd": 0.0,
+    "complexity": 1,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 4,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 340,
+        "issued_alert_fraction": 0.0
+      },
+      "off": {
+        "bins": 1408,
+        "issued_alert_fraction": 0.0
+      },
+      "transition": {
+        "bins": 506,
+        "issued_alert_fraction": 0.0
+      },
+      "unloaded": {
+        "bins": 684,
+        "issued_alert_fraction": 0.0
+      }
+    },
+    "evaluation": {
+      "start": "2020-03-20 00:00:00",
+      "end_exclusive": "2020-04-01 00:00:00",
+      "assigned_event_count": 0,
+      "event_count": 0,
+      "unobservable_events": 0,
+      "partial_events": 0,
+      "complete_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": null,
+      "alert_episodes": 0,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 0,
+      "unannotated_alert_episodes": 0,
+      "observed_days": 10.215277777777779,
+      "calendar_days": 12.0,
+      "unannotated_observed_days": 10.215277777777779,
+      "unannotated_alerts_per_observed_day": 0.0,
+      "unannotated_alerts_per_calendar_day": 0.0,
+      "alert_bin_fraction": 0.0,
+      "events": []
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "robust_pressure_q0.98_p1",
+    "fold": "early_development",
+    "model_id": "robust_pressure",
+    "model_type": "robust",
+    "feature_set": "pressure",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Reservoirs",
+      "pressure_difference",
+      "reservoir_gap",
+      "pressure_variation",
+      "temperature_change_15min",
+      "Motor_current",
+      "Oil_temperature",
+      "DV_eletric"
+    ],
+    "feature_count": 12,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-03-20 00:00:00",
+    "evaluation_start": "2020-03-20 00:00:00",
+    "evaluation_end_exclusive": "2020-04-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": null,
+      "subsample": null,
+      "covariance_estimator": null
+    },
+    "quantile": 0.98,
+    "persistence_bins": 1,
+    "threshold": 927.7349419354837,
+    "regime_thresholds": {},
+    "fit_seconds": 0.0039849580061854795,
+    "weekly_alert_fraction_sd": 0.0003695716082046873,
+    "complexity": 1,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 4,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 340,
+        "issued_alert_fraction": 0.011764705882352941
+      },
+      "off": {
+        "bins": 1408,
+        "issued_alert_fraction": 0.0
+      },
+      "transition": {
+        "bins": 506,
+        "issued_alert_fraction": 0.0
+      },
+      "unloaded": {
+        "bins": 684,
+        "issued_alert_fraction": 0.0
+      }
+    },
+    "evaluation": {
+      "start": "2020-03-20 00:00:00",
+      "end_exclusive": "2020-04-01 00:00:00",
+      "assigned_event_count": 0,
+      "event_count": 0,
+      "unobservable_events": 0,
+      "partial_events": 0,
+      "complete_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": null,
+      "alert_episodes": 4,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 4,
+      "unannotated_alert_episodes": 4,
+      "observed_days": 10.215277777777779,
+      "calendar_days": 12.0,
+      "unannotated_observed_days": 10.215277777777779,
+      "unannotated_alerts_per_observed_day": 0.39157036029911624,
+      "unannotated_alerts_per_calendar_day": 0.3333333333333333,
+      "alert_bin_fraction": 0.0013596193065941536,
+      "events": []
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "robust_pressure_q0.98_p3",
+    "fold": "early_development",
+    "model_id": "robust_pressure",
+    "model_type": "robust",
+    "feature_set": "pressure",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Reservoirs",
+      "pressure_difference",
+      "reservoir_gap",
+      "pressure_variation",
+      "temperature_change_15min",
+      "Motor_current",
+      "Oil_temperature",
+      "DV_eletric"
+    ],
+    "feature_count": 12,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-03-20 00:00:00",
+    "evaluation_start": "2020-03-20 00:00:00",
+    "evaluation_end_exclusive": "2020-04-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": null,
+      "subsample": null,
+      "covariance_estimator": null
+    },
+    "quantile": 0.98,
+    "persistence_bins": 3,
+    "threshold": 927.7349419354837,
+    "regime_thresholds": {},
+    "fit_seconds": 0.0039849580061854795,
+    "weekly_alert_fraction_sd": 0.0,
+    "complexity": 1,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 4,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 340,
+        "issued_alert_fraction": 0.0
+      },
+      "off": {
+        "bins": 1408,
+        "issued_alert_fraction": 0.0
+      },
+      "transition": {
+        "bins": 506,
+        "issued_alert_fraction": 0.0
+      },
+      "unloaded": {
+        "bins": 684,
+        "issued_alert_fraction": 0.0
+      }
+    },
+    "evaluation": {
+      "start": "2020-03-20 00:00:00",
+      "end_exclusive": "2020-04-01 00:00:00",
+      "assigned_event_count": 0,
+      "event_count": 0,
+      "unobservable_events": 0,
+      "partial_events": 0,
+      "complete_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": null,
+      "alert_episodes": 0,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 0,
+      "unannotated_alert_episodes": 0,
+      "observed_days": 10.215277777777779,
+      "calendar_days": 12.0,
+      "unannotated_observed_days": 10.215277777777779,
+      "unannotated_alerts_per_observed_day": 0.0,
+      "unannotated_alerts_per_calendar_day": 0.0,
+      "alert_bin_fraction": 0.0,
+      "events": []
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "robust_pressure_q0.995_p1",
+    "fold": "early_development",
+    "model_id": "robust_pressure",
+    "model_type": "robust",
+    "feature_set": "pressure",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Reservoirs",
+      "pressure_difference",
+      "reservoir_gap",
+      "pressure_variation",
+      "temperature_change_15min",
+      "Motor_current",
+      "Oil_temperature",
+      "DV_eletric"
+    ],
+    "feature_count": 12,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-03-20 00:00:00",
+    "evaluation_start": "2020-03-20 00:00:00",
+    "evaluation_end_exclusive": "2020-04-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": null,
+      "subsample": null,
+      "covariance_estimator": null
+    },
+    "quantile": 0.995,
+    "persistence_bins": 1,
+    "threshold": 949.6866666666662,
+    "regime_thresholds": {},
+    "fit_seconds": 0.0039849580061854795,
+    "weekly_alert_fraction_sd": 0.00027100271002710027,
+    "complexity": 1,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 4,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 340,
+        "issued_alert_fraction": 0.0029411764705882353
+      },
+      "off": {
+        "bins": 1408,
+        "issued_alert_fraction": 0.0
+      },
+      "transition": {
+        "bins": 506,
+        "issued_alert_fraction": 0.0
+      },
+      "unloaded": {
+        "bins": 684,
+        "issued_alert_fraction": 0.0
+      }
+    },
+    "evaluation": {
+      "start": "2020-03-20 00:00:00",
+      "end_exclusive": "2020-04-01 00:00:00",
+      "assigned_event_count": 0,
+      "event_count": 0,
+      "unobservable_events": 0,
+      "partial_events": 0,
+      "complete_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": null,
+      "alert_episodes": 1,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 1,
+      "unannotated_alert_episodes": 1,
+      "observed_days": 10.215277777777779,
+      "calendar_days": 12.0,
+      "unannotated_observed_days": 10.215277777777779,
+      "unannotated_alerts_per_observed_day": 0.09789259007477906,
+      "unannotated_alerts_per_calendar_day": 0.08333333333333333,
+      "alert_bin_fraction": 0.0003399048266485384,
+      "events": []
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "robust_pressure_q0.995_p3",
+    "fold": "early_development",
+    "model_id": "robust_pressure",
+    "model_type": "robust",
+    "feature_set": "pressure",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Reservoirs",
+      "pressure_difference",
+      "reservoir_gap",
+      "pressure_variation",
+      "temperature_change_15min",
+      "Motor_current",
+      "Oil_temperature",
+      "DV_eletric"
+    ],
+    "feature_count": 12,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-03-20 00:00:00",
+    "evaluation_start": "2020-03-20 00:00:00",
+    "evaluation_end_exclusive": "2020-04-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": null,
+      "subsample": null,
+      "covariance_estimator": null
+    },
+    "quantile": 0.995,
+    "persistence_bins": 3,
+    "threshold": 949.6866666666662,
+    "regime_thresholds": {},
+    "fit_seconds": 0.0039849580061854795,
+    "weekly_alert_fraction_sd": 0.0,
+    "complexity": 1,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 4,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 340,
+        "issued_alert_fraction": 0.0
+      },
+      "off": {
+        "bins": 1408,
+        "issued_alert_fraction": 0.0
+      },
+      "transition": {
+        "bins": 506,
+        "issued_alert_fraction": 0.0
+      },
+      "unloaded": {
+        "bins": 684,
+        "issued_alert_fraction": 0.0
+      }
+    },
+    "evaluation": {
+      "start": "2020-03-20 00:00:00",
+      "end_exclusive": "2020-04-01 00:00:00",
+      "assigned_event_count": 0,
+      "event_count": 0,
+      "unobservable_events": 0,
+      "partial_events": 0,
+      "complete_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": null,
+      "alert_episodes": 0,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 0,
+      "unannotated_alert_episodes": 0,
+      "observed_days": 10.215277777777779,
+      "calendar_days": 12.0,
+      "unannotated_observed_days": 10.215277777777779,
+      "unannotated_alerts_per_observed_day": 0.0,
+      "unannotated_alerts_per_calendar_day": 0.0,
+      "alert_bin_fraction": 0.0,
+      "events": []
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "covariance_pressure_q0.98_p1",
+    "fold": "early_development",
+    "model_id": "covariance_pressure",
+    "model_type": "covariance",
+    "feature_set": "pressure",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Reservoirs",
+      "pressure_difference",
+      "reservoir_gap",
+      "pressure_variation",
+      "temperature_change_15min",
+      "Motor_current",
+      "Oil_temperature",
+      "DV_eletric"
+    ],
+    "feature_count": 12,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-03-20 00:00:00",
+    "evaluation_start": "2020-03-20 00:00:00",
+    "evaluation_end_exclusive": "2020-04-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": null,
+      "subsample": null,
+      "covariance_estimator": "winsorized training LedoitWolf"
+    },
+    "quantile": 0.98,
+    "persistence_bins": 1,
+    "threshold": 2469562.9585873405,
+    "regime_thresholds": {},
+    "fit_seconds": 0.01508141600061208,
+    "weekly_alert_fraction_sd": 0.0008253601223341313,
+    "complexity": 2,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 4,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 340,
+        "issued_alert_fraction": 0.014705882352941176
+      },
+      "off": {
+        "bins": 1408,
+        "issued_alert_fraction": 0.0
+      },
+      "transition": {
+        "bins": 506,
+        "issued_alert_fraction": 0.0
+      },
+      "unloaded": {
+        "bins": 684,
+        "issued_alert_fraction": 0.0
+      }
+    },
+    "evaluation": {
+      "start": "2020-03-20 00:00:00",
+      "end_exclusive": "2020-04-01 00:00:00",
+      "assigned_event_count": 0,
+      "event_count": 0,
+      "unobservable_events": 0,
+      "partial_events": 0,
+      "complete_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": null,
+      "alert_episodes": 5,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 5,
+      "unannotated_alert_episodes": 5,
+      "observed_days": 10.215277777777779,
+      "calendar_days": 12.0,
+      "unannotated_observed_days": 10.215277777777779,
+      "unannotated_alerts_per_observed_day": 0.48946295037389526,
+      "unannotated_alerts_per_calendar_day": 0.4166666666666667,
+      "alert_bin_fraction": 0.001699524133242692,
+      "events": []
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "covariance_pressure_q0.98_p3",
+    "fold": "early_development",
+    "model_id": "covariance_pressure",
+    "model_type": "covariance",
+    "feature_set": "pressure",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Reservoirs",
+      "pressure_difference",
+      "reservoir_gap",
+      "pressure_variation",
+      "temperature_change_15min",
+      "Motor_current",
+      "Oil_temperature",
+      "DV_eletric"
+    ],
+    "feature_count": 12,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-03-20 00:00:00",
+    "evaluation_start": "2020-03-20 00:00:00",
+    "evaluation_end_exclusive": "2020-04-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": null,
+      "subsample": null,
+      "covariance_estimator": "winsorized training LedoitWolf"
+    },
+    "quantile": 0.98,
+    "persistence_bins": 3,
+    "threshold": 2469562.9585873405,
+    "regime_thresholds": {},
+    "fit_seconds": 0.01508141600061208,
+    "weekly_alert_fraction_sd": 0.0,
+    "complexity": 2,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 4,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 340,
+        "issued_alert_fraction": 0.0
+      },
+      "off": {
+        "bins": 1408,
+        "issued_alert_fraction": 0.0
+      },
+      "transition": {
+        "bins": 506,
+        "issued_alert_fraction": 0.0
+      },
+      "unloaded": {
+        "bins": 684,
+        "issued_alert_fraction": 0.0
+      }
+    },
+    "evaluation": {
+      "start": "2020-03-20 00:00:00",
+      "end_exclusive": "2020-04-01 00:00:00",
+      "assigned_event_count": 0,
+      "event_count": 0,
+      "unobservable_events": 0,
+      "partial_events": 0,
+      "complete_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": null,
+      "alert_episodes": 0,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 0,
+      "unannotated_alert_episodes": 0,
+      "observed_days": 10.215277777777779,
+      "calendar_days": 12.0,
+      "unannotated_observed_days": 10.215277777777779,
+      "unannotated_alerts_per_observed_day": 0.0,
+      "unannotated_alerts_per_calendar_day": 0.0,
+      "alert_bin_fraction": 0.0,
+      "events": []
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "covariance_pressure_q0.995_p1",
+    "fold": "early_development",
+    "model_id": "covariance_pressure",
+    "model_type": "covariance",
+    "feature_set": "pressure",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Reservoirs",
+      "pressure_difference",
+      "reservoir_gap",
+      "pressure_variation",
+      "temperature_change_15min",
+      "Motor_current",
+      "Oil_temperature",
+      "DV_eletric"
+    ],
+    "feature_count": 12,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-03-20 00:00:00",
+    "evaluation_start": "2020-03-20 00:00:00",
+    "evaluation_end_exclusive": "2020-04-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": null,
+      "subsample": null,
+      "covariance_estimator": "winsorized training LedoitWolf"
+    },
+    "quantile": 0.995,
+    "persistence_bins": 1,
+    "threshold": 2602842.3857597373,
+    "regime_thresholds": {},
+    "fit_seconds": 0.01508141600061208,
+    "weekly_alert_fraction_sd": 0.00027100271002710027,
+    "complexity": 2,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 4,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 340,
+        "issued_alert_fraction": 0.0029411764705882353
+      },
+      "off": {
+        "bins": 1408,
+        "issued_alert_fraction": 0.0
+      },
+      "transition": {
+        "bins": 506,
+        "issued_alert_fraction": 0.0
+      },
+      "unloaded": {
+        "bins": 684,
+        "issued_alert_fraction": 0.0
+      }
+    },
+    "evaluation": {
+      "start": "2020-03-20 00:00:00",
+      "end_exclusive": "2020-04-01 00:00:00",
+      "assigned_event_count": 0,
+      "event_count": 0,
+      "unobservable_events": 0,
+      "partial_events": 0,
+      "complete_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": null,
+      "alert_episodes": 1,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 1,
+      "unannotated_alert_episodes": 1,
+      "observed_days": 10.215277777777779,
+      "calendar_days": 12.0,
+      "unannotated_observed_days": 10.215277777777779,
+      "unannotated_alerts_per_observed_day": 0.09789259007477906,
+      "unannotated_alerts_per_calendar_day": 0.08333333333333333,
+      "alert_bin_fraction": 0.0003399048266485384,
+      "events": []
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "covariance_pressure_q0.995_p3",
+    "fold": "early_development",
+    "model_id": "covariance_pressure",
+    "model_type": "covariance",
+    "feature_set": "pressure",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Reservoirs",
+      "pressure_difference",
+      "reservoir_gap",
+      "pressure_variation",
+      "temperature_change_15min",
+      "Motor_current",
+      "Oil_temperature",
+      "DV_eletric"
+    ],
+    "feature_count": 12,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-03-20 00:00:00",
+    "evaluation_start": "2020-03-20 00:00:00",
+    "evaluation_end_exclusive": "2020-04-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": null,
+      "subsample": null,
+      "covariance_estimator": "winsorized training LedoitWolf"
+    },
+    "quantile": 0.995,
+    "persistence_bins": 3,
+    "threshold": 2602842.3857597373,
+    "regime_thresholds": {},
+    "fit_seconds": 0.01508141600061208,
+    "weekly_alert_fraction_sd": 0.0,
+    "complexity": 2,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 4,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 340,
+        "issued_alert_fraction": 0.0
+      },
+      "off": {
+        "bins": 1408,
+        "issued_alert_fraction": 0.0
+      },
+      "transition": {
+        "bins": 506,
+        "issued_alert_fraction": 0.0
+      },
+      "unloaded": {
+        "bins": 684,
+        "issued_alert_fraction": 0.0
+      }
+    },
+    "evaluation": {
+      "start": "2020-03-20 00:00:00",
+      "end_exclusive": "2020-04-01 00:00:00",
+      "assigned_event_count": 0,
+      "event_count": 0,
+      "unobservable_events": 0,
+      "partial_events": 0,
+      "complete_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": null,
+      "alert_episodes": 0,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 0,
+      "unannotated_alert_episodes": 0,
+      "observed_days": 10.215277777777779,
+      "calendar_days": 12.0,
+      "unannotated_observed_days": 10.215277777777779,
+      "unannotated_alerts_per_observed_day": 0.0,
+      "unannotated_alerts_per_calendar_day": 0.0,
+      "alert_bin_fraction": 0.0,
+      "events": []
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "regime_pressure_q0.98_p1",
+    "fold": "early_development",
+    "model_id": "regime_pressure",
+    "model_type": "regime_robust",
+    "feature_set": "pressure",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Reservoirs",
+      "pressure_difference",
+      "reservoir_gap",
+      "pressure_variation",
+      "temperature_change_15min",
+      "Motor_current",
+      "Oil_temperature",
+      "DV_eletric"
+    ],
+    "feature_count": 12,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-03-20 00:00:00",
+    "evaluation_start": "2020-03-20 00:00:00",
+    "evaluation_end_exclusive": "2020-04-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": null,
+      "subsample": null,
+      "covariance_estimator": null
+    },
+    "quantile": 0.98,
+    "persistence_bins": 1,
+    "threshold": 927.7349419354837,
+    "regime_thresholds": {
+      "off": 97.35973333333311,
+      "transition": 14.30508387096774,
+      "unloaded": 194.45279999999983
+    },
+    "fit_seconds": 0.010964415996568277,
+    "weekly_alert_fraction_sd": 0.0010966098722062865,
+    "complexity": 2,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 4,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 340,
+        "issued_alert_fraction": 0.011764705882352941
+      },
+      "off": {
+        "bins": 1408,
+        "issued_alert_fraction": 0.014204545454545454
+      },
+      "transition": {
+        "bins": 506,
+        "issued_alert_fraction": 0.05731225296442688
+      },
+      "unloaded": {
+        "bins": 684,
+        "issued_alert_fraction": 0.014619883040935672
+      }
+    },
+    "evaluation": {
+      "start": "2020-03-20 00:00:00",
+      "end_exclusive": "2020-04-01 00:00:00",
+      "assigned_event_count": 0,
+      "event_count": 0,
+      "unobservable_events": 0,
+      "partial_events": 0,
+      "complete_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": null,
+      "alert_episodes": 59,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 59,
+      "unannotated_alert_episodes": 59,
+      "observed_days": 10.215277777777779,
+      "calendar_days": 12.0,
+      "unannotated_observed_days": 10.215277777777779,
+      "unannotated_alerts_per_observed_day": 5.775662814411964,
+      "unannotated_alerts_per_calendar_day": 4.916666666666667,
+      "alert_bin_fraction": 0.02141400407885792,
+      "events": []
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "regime_pressure_q0.98_p3",
+    "fold": "early_development",
+    "model_id": "regime_pressure",
+    "model_type": "regime_robust",
+    "feature_set": "pressure",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Reservoirs",
+      "pressure_difference",
+      "reservoir_gap",
+      "pressure_variation",
+      "temperature_change_15min",
+      "Motor_current",
+      "Oil_temperature",
+      "DV_eletric"
+    ],
+    "feature_count": 12,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-03-20 00:00:00",
+    "evaluation_start": "2020-03-20 00:00:00",
+    "evaluation_end_exclusive": "2020-04-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": null,
+      "subsample": null,
+      "covariance_estimator": null
+    },
+    "quantile": 0.98,
+    "persistence_bins": 3,
+    "threshold": 927.7349419354837,
+    "regime_thresholds": {
+      "off": 97.35973333333311,
+      "transition": 14.30508387096774,
+      "unloaded": 194.45279999999983
+    },
+    "fit_seconds": 0.010964415996568277,
+    "weekly_alert_fraction_sd": 0.0,
+    "complexity": 2,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 4,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 340,
+        "issued_alert_fraction": 0.0
+      },
+      "off": {
+        "bins": 1408,
+        "issued_alert_fraction": 0.0
+      },
+      "transition": {
+        "bins": 506,
+        "issued_alert_fraction": 0.0
+      },
+      "unloaded": {
+        "bins": 684,
+        "issued_alert_fraction": 0.0
+      }
+    },
+    "evaluation": {
+      "start": "2020-03-20 00:00:00",
+      "end_exclusive": "2020-04-01 00:00:00",
+      "assigned_event_count": 0,
+      "event_count": 0,
+      "unobservable_events": 0,
+      "partial_events": 0,
+      "complete_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": null,
+      "alert_episodes": 0,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 0,
+      "unannotated_alert_episodes": 0,
+      "observed_days": 10.215277777777779,
+      "calendar_days": 12.0,
+      "unannotated_observed_days": 10.215277777777779,
+      "unannotated_alerts_per_observed_day": 0.0,
+      "unannotated_alerts_per_calendar_day": 0.0,
+      "alert_bin_fraction": 0.0,
+      "events": []
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "regime_pressure_q0.995_p1",
+    "fold": "early_development",
+    "model_id": "regime_pressure",
+    "model_type": "regime_robust",
+    "feature_set": "pressure",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Reservoirs",
+      "pressure_difference",
+      "reservoir_gap",
+      "pressure_variation",
+      "temperature_change_15min",
+      "Motor_current",
+      "Oil_temperature",
+      "DV_eletric"
+    ],
+    "feature_count": 12,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-03-20 00:00:00",
+    "evaluation_start": "2020-03-20 00:00:00",
+    "evaluation_end_exclusive": "2020-04-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": null,
+      "subsample": null,
+      "covariance_estimator": null
+    },
+    "quantile": 0.995,
+    "persistence_bins": 1,
+    "threshold": 949.6866666666662,
+    "regime_thresholds": {
+      "off": 123.48466666666673,
+      "transition": 20.13793548387103,
+      "unloaded": 206.68820215053745
+    },
+    "fit_seconds": 0.010964415996568277,
+    "weekly_alert_fraction_sd": 0.0010348499109421355,
+    "complexity": 2,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 4,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 340,
+        "issued_alert_fraction": 0.0029411764705882353
+      },
+      "off": {
+        "bins": 1408,
+        "issued_alert_fraction": 0.0035511363636363635
+      },
+      "transition": {
+        "bins": 506,
+        "issued_alert_fraction": 0.03359683794466403
+      },
+      "unloaded": {
+        "bins": 684,
+        "issued_alert_fraction": 0.0
+      }
+    },
+    "evaluation": {
+      "start": "2020-03-20 00:00:00",
+      "end_exclusive": "2020-04-01 00:00:00",
+      "assigned_event_count": 0,
+      "event_count": 0,
+      "unobservable_events": 0,
+      "partial_events": 0,
+      "complete_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": null,
+      "alert_episodes": 23,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 23,
+      "unannotated_alert_episodes": 23,
+      "observed_days": 10.215277777777779,
+      "calendar_days": 12.0,
+      "unannotated_observed_days": 10.215277777777779,
+      "unannotated_alerts_per_observed_day": 2.251529571719918,
+      "unannotated_alerts_per_calendar_day": 1.9166666666666667,
+      "alert_bin_fraction": 0.007817811012916384,
+      "events": []
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "regime_pressure_q0.995_p3",
+    "fold": "early_development",
+    "model_id": "regime_pressure",
+    "model_type": "regime_robust",
+    "feature_set": "pressure",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Reservoirs",
+      "pressure_difference",
+      "reservoir_gap",
+      "pressure_variation",
+      "temperature_change_15min",
+      "Motor_current",
+      "Oil_temperature",
+      "DV_eletric"
+    ],
+    "feature_count": 12,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-03-20 00:00:00",
+    "evaluation_start": "2020-03-20 00:00:00",
+    "evaluation_end_exclusive": "2020-04-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": null,
+      "subsample": null,
+      "covariance_estimator": null
+    },
+    "quantile": 0.995,
+    "persistence_bins": 3,
+    "threshold": 949.6866666666662,
+    "regime_thresholds": {
+      "off": 123.48466666666673,
+      "transition": 20.13793548387103,
+      "unloaded": 206.68820215053745
+    },
+    "fit_seconds": 0.010964415996568277,
+    "weekly_alert_fraction_sd": 0.0,
+    "complexity": 2,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 4,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 340,
+        "issued_alert_fraction": 0.0
+      },
+      "off": {
+        "bins": 1408,
+        "issued_alert_fraction": 0.0
+      },
+      "transition": {
+        "bins": 506,
+        "issued_alert_fraction": 0.0
+      },
+      "unloaded": {
+        "bins": 684,
+        "issued_alert_fraction": 0.0
+      }
+    },
+    "evaluation": {
+      "start": "2020-03-20 00:00:00",
+      "end_exclusive": "2020-04-01 00:00:00",
+      "assigned_event_count": 0,
+      "event_count": 0,
+      "unobservable_events": 0,
+      "partial_events": 0,
+      "complete_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": null,
+      "alert_episodes": 0,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 0,
+      "unannotated_alert_episodes": 0,
+      "observed_days": 10.215277777777779,
+      "calendar_days": 12.0,
+      "unannotated_observed_days": 10.215277777777779,
+      "unannotated_alerts_per_observed_day": 0.0,
+      "unannotated_alerts_per_calendar_day": 0.0,
+      "alert_bin_fraction": 0.0,
+      "events": []
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "isolation_reduced_q0.98_p1",
+    "fold": "early_development",
+    "model_id": "isolation_reduced",
+    "model_type": "isolation",
+    "feature_set": "reduced",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Oil_temperature",
+      "Motor_current",
+      "reservoir_gap",
+      "pressure_variation",
+      "temperature_change_15min",
+      "Oil_temperature_mean_3",
+      "Motor_current_std_3",
+      "load_transition"
+    ],
+    "feature_count": 12,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-03-20 00:00:00",
+    "evaluation_start": "2020-03-20 00:00:00",
+    "evaluation_end_exclusive": "2020-04-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": 200,
+      "subsample": 256,
+      "covariance_estimator": null
+    },
+    "quantile": 0.98,
+    "persistence_bins": 1,
+    "threshold": 0.7191396233622093,
+    "regime_thresholds": {},
+    "fit_seconds": 0.14681804200517945,
+    "weekly_alert_fraction_sd": 0.0717682865069307,
+    "complexity": 3,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 4,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 340,
+        "issued_alert_fraction": 0.5088235294117647
+      },
+      "off": {
+        "bins": 1408,
+        "issued_alert_fraction": 0.0
+      },
+      "transition": {
+        "bins": 506,
+        "issued_alert_fraction": 0.003952569169960474
+      },
+      "unloaded": {
+        "bins": 684,
+        "issued_alert_fraction": 0.0
+      }
+    },
+    "evaluation": {
+      "start": "2020-03-20 00:00:00",
+      "end_exclusive": "2020-04-01 00:00:00",
+      "assigned_event_count": 0,
+      "event_count": 0,
+      "unobservable_events": 0,
+      "partial_events": 0,
+      "complete_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": null,
+      "alert_episodes": 29,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 29,
+      "unannotated_alert_episodes": 29,
+      "observed_days": 10.215277777777779,
+      "calendar_days": 12.0,
+      "unannotated_observed_days": 10.215277777777779,
+      "unannotated_alerts_per_observed_day": 2.8388851121685925,
+      "unannotated_alerts_per_calendar_day": 2.4166666666666665,
+      "alert_bin_fraction": 0.05948334466349422,
+      "events": []
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "isolation_reduced_q0.98_p3",
+    "fold": "early_development",
+    "model_id": "isolation_reduced",
+    "model_type": "isolation",
+    "feature_set": "reduced",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Oil_temperature",
+      "Motor_current",
+      "reservoir_gap",
+      "pressure_variation",
+      "temperature_change_15min",
+      "Oil_temperature_mean_3",
+      "Motor_current_std_3",
+      "load_transition"
+    ],
+    "feature_count": 12,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-03-20 00:00:00",
+    "evaluation_start": "2020-03-20 00:00:00",
+    "evaluation_end_exclusive": "2020-04-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": 200,
+      "subsample": 256,
+      "covariance_estimator": null
+    },
+    "quantile": 0.98,
+    "persistence_bins": 3,
+    "threshold": 0.7191396233622093,
+    "regime_thresholds": {},
+    "fit_seconds": 0.14681804200517945,
+    "weekly_alert_fraction_sd": 0.05580333652014734,
+    "complexity": 3,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 4,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 340,
+        "issued_alert_fraction": 0.38823529411764707
+      },
+      "off": {
+        "bins": 1408,
+        "issued_alert_fraction": 0.0
+      },
+      "transition": {
+        "bins": 506,
+        "issued_alert_fraction": 0.0
+      },
+      "unloaded": {
+        "bins": 684,
+        "issued_alert_fraction": 0.0
+      }
+    },
+    "evaluation": {
+      "start": "2020-03-20 00:00:00",
+      "end_exclusive": "2020-04-01 00:00:00",
+      "assigned_event_count": 0,
+      "event_count": 0,
+      "unobservable_events": 0,
+      "partial_events": 0,
+      "complete_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": null,
+      "alert_episodes": 13,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 13,
+      "unannotated_alert_episodes": 13,
+      "observed_days": 10.215277777777779,
+      "calendar_days": 12.0,
+      "unannotated_observed_days": 10.215277777777779,
+      "unannotated_alerts_per_observed_day": 1.2726036709721278,
+      "unannotated_alerts_per_calendar_day": 1.0833333333333333,
+      "alert_bin_fraction": 0.04486743711760707,
+      "events": []
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "isolation_reduced_q0.995_p1",
+    "fold": "early_development",
+    "model_id": "isolation_reduced",
+    "model_type": "isolation",
+    "feature_set": "reduced",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Oil_temperature",
+      "Motor_current",
+      "reservoir_gap",
+      "pressure_variation",
+      "temperature_change_15min",
+      "Oil_temperature_mean_3",
+      "Motor_current_std_3",
+      "load_transition"
+    ],
+    "feature_count": 12,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-03-20 00:00:00",
+    "evaluation_start": "2020-03-20 00:00:00",
+    "evaluation_end_exclusive": "2020-04-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": 200,
+      "subsample": 256,
+      "covariance_estimator": null
+    },
+    "quantile": 0.995,
+    "persistence_bins": 1,
+    "threshold": 0.7294562290687654,
+    "regime_thresholds": {},
+    "fit_seconds": 0.14681804200517945,
+    "weekly_alert_fraction_sd": 0.005654247973655671,
+    "complexity": 3,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 4,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 340,
+        "issued_alert_fraction": 0.041176470588235294
+      },
+      "off": {
+        "bins": 1408,
+        "issued_alert_fraction": 0.0
+      },
+      "transition": {
+        "bins": 506,
+        "issued_alert_fraction": 0.0
+      },
+      "unloaded": {
+        "bins": 684,
+        "issued_alert_fraction": 0.0
+      }
+    },
+    "evaluation": {
+      "start": "2020-03-20 00:00:00",
+      "end_exclusive": "2020-04-01 00:00:00",
+      "assigned_event_count": 0,
+      "event_count": 0,
+      "unobservable_events": 0,
+      "partial_events": 0,
+      "complete_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": null,
+      "alert_episodes": 11,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 11,
+      "unannotated_alert_episodes": 11,
+      "observed_days": 10.215277777777779,
+      "calendar_days": 12.0,
+      "unannotated_observed_days": 10.215277777777779,
+      "unannotated_alerts_per_observed_day": 1.0768184908225695,
+      "unannotated_alerts_per_calendar_day": 0.9166666666666666,
+      "alert_bin_fraction": 0.004758667573079538,
+      "events": []
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "isolation_reduced_q0.995_p3",
+    "fold": "early_development",
+    "model_id": "isolation_reduced",
+    "model_type": "isolation",
+    "feature_set": "reduced",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Oil_temperature",
+      "Motor_current",
+      "reservoir_gap",
+      "pressure_variation",
+      "temperature_change_15min",
+      "Oil_temperature_mean_3",
+      "Motor_current_std_3",
+      "load_transition"
+    ],
+    "feature_count": 12,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-03-20 00:00:00",
+    "evaluation_start": "2020-03-20 00:00:00",
+    "evaluation_end_exclusive": "2020-04-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": 200,
+      "subsample": 256,
+      "covariance_estimator": null
+    },
+    "quantile": 0.995,
+    "persistence_bins": 3,
+    "threshold": 0.7294562290687654,
+    "regime_thresholds": {},
+    "fit_seconds": 0.14681804200517945,
+    "weekly_alert_fraction_sd": 0.00045578851412944393,
+    "complexity": 3,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 4,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 340,
+        "issued_alert_fraction": 0.0029411764705882353
+      },
+      "off": {
+        "bins": 1408,
+        "issued_alert_fraction": 0.0
+      },
+      "transition": {
+        "bins": 506,
+        "issued_alert_fraction": 0.0
+      },
+      "unloaded": {
+        "bins": 684,
+        "issued_alert_fraction": 0.0
+      }
+    },
+    "evaluation": {
+      "start": "2020-03-20 00:00:00",
+      "end_exclusive": "2020-04-01 00:00:00",
+      "assigned_event_count": 0,
+      "event_count": 0,
+      "unobservable_events": 0,
+      "partial_events": 0,
+      "complete_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": null,
+      "alert_episodes": 1,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 1,
+      "unannotated_alert_episodes": 1,
+      "observed_days": 10.215277777777779,
+      "calendar_days": 12.0,
+      "unannotated_observed_days": 10.215277777777779,
+      "unannotated_alerts_per_observed_day": 0.09789259007477906,
+      "unannotated_alerts_per_calendar_day": 0.08333333333333333,
+      "alert_bin_fraction": 0.0003399048266485384,
+      "events": []
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "robust_original_q0.98_p1",
+    "fold": "primary_development",
+    "model_id": "robust_original",
+    "model_type": "robust",
+    "feature_set": "original",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Reservoirs",
+      "Oil_temperature",
+      "Motor_current",
+      "COMP",
+      "DV_eletric",
+      "Towers",
+      "MPG",
+      "LPS",
+      "Pressure_switch",
+      "Oil_level",
+      "Caudal_impulses",
+      "pressure_difference",
+      "TP2_change",
+      "TP2_mean_3",
+      "TP2_std_3",
+      "TP2_mean_12",
+      "TP2_std_12",
+      "TP3_change",
+      "TP3_mean_3",
+      "TP3_std_3",
+      "TP3_mean_12",
+      "TP3_std_12",
+      "H1_change",
+      "H1_mean_3",
+      "H1_std_3",
+      "H1_mean_12",
+      "H1_std_12",
+      "DV_pressure_change",
+      "DV_pressure_mean_3",
+      "DV_pressure_std_3",
+      "DV_pressure_mean_12",
+      "DV_pressure_std_12",
+      "Reservoirs_change",
+      "Reservoirs_mean_3",
+      "Reservoirs_std_3",
+      "Reservoirs_mean_12",
+      "Reservoirs_std_12",
+      "Oil_temperature_change",
+      "Oil_temperature_mean_3",
+      "Oil_temperature_std_3",
+      "Oil_temperature_mean_12",
+      "Oil_temperature_std_12",
+      "Motor_current_change",
+      "Motor_current_mean_3",
+      "Motor_current_std_3",
+      "Motor_current_mean_12",
+      "Motor_current_std_12",
+      "load_transition"
+    ],
+    "feature_count": 52,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-04-01 00:00:00",
+    "evaluation_start": "2020-04-01 00:00:00",
+    "evaluation_end_exclusive": "2020-05-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": null,
+      "subsample": null,
+      "covariance_estimator": null
+    },
+    "quantile": 0.98,
+    "persistence_bins": 1,
+    "threshold": 914.0506666666665,
+    "regime_thresholds": {},
+    "fit_seconds": 0.01403095900604967,
+    "weekly_alert_fraction_sd": 0.024027401875674707,
+    "complexity": 1,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 189,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 455,
+        "issued_alert_fraction": 0.23076923076923078
+      },
+      "off": {
+        "bins": 3136,
+        "issued_alert_fraction": 0.0
+      },
+      "transition": {
+        "bins": 1139,
+        "issued_alert_fraction": 0.0
+      },
+      "unloaded": {
+        "bins": 1314,
+        "issued_alert_fraction": 0.0
+      }
+    },
+    "evaluation": {
+      "start": "2020-04-01 00:00:00",
+      "end_exclusive": "2020-05-01 00:00:00",
+      "assigned_event_count": 1,
+      "event_count": 1,
+      "unobservable_events": 0,
+      "partial_events": 1,
+      "complete_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": 0.0,
+      "alert_episodes": 24,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 24,
+      "unannotated_alert_episodes": 24,
+      "observed_days": 21.64236111111111,
+      "calendar_days": 30.0,
+      "unannotated_observed_days": 20.68402777777778,
+      "unannotated_alerts_per_observed_day": 1.1603155950982038,
+      "unannotated_alerts_per_calendar_day": 0.8,
+      "alert_bin_fraction": 0.016845820632119365,
+      "events": [
+        {
+          "event_id": 1,
+          "start": "2020-04-18 00:00:00",
+          "end": "2020-04-18 23:59:00",
+          "observed_bins": 276,
+          "expected_bins": 288,
+          "coverage": "partial",
+          "coverage_fraction": 0.9583333333333334,
+          "detected_during_event": false,
+          "earliest_warning_time": null,
+          "nearest_warning_time": null,
+          "warning_episode_onset": null,
+          "earliest_warning_lead_hours": null,
+          "nearest_warning_lead_hours": null,
+          "episode_onset_warning_lead_hours": null,
+          "lead_time_hours": null
+        }
+      ]
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "robust_original_q0.98_p3",
+    "fold": "primary_development",
+    "model_id": "robust_original",
+    "model_type": "robust",
+    "feature_set": "original",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Reservoirs",
+      "Oil_temperature",
+      "Motor_current",
+      "COMP",
+      "DV_eletric",
+      "Towers",
+      "MPG",
+      "LPS",
+      "Pressure_switch",
+      "Oil_level",
+      "Caudal_impulses",
+      "pressure_difference",
+      "TP2_change",
+      "TP2_mean_3",
+      "TP2_std_3",
+      "TP2_mean_12",
+      "TP2_std_12",
+      "TP3_change",
+      "TP3_mean_3",
+      "TP3_std_3",
+      "TP3_mean_12",
+      "TP3_std_12",
+      "H1_change",
+      "H1_mean_3",
+      "H1_std_3",
+      "H1_mean_12",
+      "H1_std_12",
+      "DV_pressure_change",
+      "DV_pressure_mean_3",
+      "DV_pressure_std_3",
+      "DV_pressure_mean_12",
+      "DV_pressure_std_12",
+      "Reservoirs_change",
+      "Reservoirs_mean_3",
+      "Reservoirs_std_3",
+      "Reservoirs_mean_12",
+      "Reservoirs_std_12",
+      "Oil_temperature_change",
+      "Oil_temperature_mean_3",
+      "Oil_temperature_std_3",
+      "Oil_temperature_mean_12",
+      "Oil_temperature_std_12",
+      "Motor_current_change",
+      "Motor_current_mean_3",
+      "Motor_current_std_3",
+      "Motor_current_mean_12",
+      "Motor_current_std_12",
+      "load_transition"
+    ],
+    "feature_count": 52,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-04-01 00:00:00",
+    "evaluation_start": "2020-04-01 00:00:00",
+    "evaluation_end_exclusive": "2020-05-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": null,
+      "subsample": null,
+      "covariance_estimator": null
+    },
+    "quantile": 0.98,
+    "persistence_bins": 3,
+    "threshold": 914.0506666666665,
+    "regime_thresholds": {},
+    "fit_seconds": 0.01403095900604967,
+    "weekly_alert_fraction_sd": 0.014623722529271722,
+    "complexity": 1,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 189,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 455,
+        "issued_alert_fraction": 0.13186813186813187
+      },
+      "off": {
+        "bins": 3136,
+        "issued_alert_fraction": 0.0
+      },
+      "transition": {
+        "bins": 1139,
+        "issued_alert_fraction": 0.0
+      },
+      "unloaded": {
+        "bins": 1314,
+        "issued_alert_fraction": 0.0
+      }
+    },
+    "evaluation": {
+      "start": "2020-04-01 00:00:00",
+      "end_exclusive": "2020-05-01 00:00:00",
+      "assigned_event_count": 1,
+      "event_count": 1,
+      "unobservable_events": 0,
+      "partial_events": 1,
+      "complete_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": 0.0,
+      "alert_episodes": 19,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 19,
+      "unannotated_alert_episodes": 19,
+      "observed_days": 21.64236111111111,
+      "calendar_days": 30.0,
+      "unannotated_observed_days": 20.68402777777778,
+      "unannotated_alerts_per_observed_day": 0.9185831794527446,
+      "unannotated_alerts_per_calendar_day": 0.6333333333333333,
+      "alert_bin_fraction": 0.009626183218353923,
+      "events": [
+        {
+          "event_id": 1,
+          "start": "2020-04-18 00:00:00",
+          "end": "2020-04-18 23:59:00",
+          "observed_bins": 276,
+          "expected_bins": 288,
+          "coverage": "partial",
+          "coverage_fraction": 0.9583333333333334,
+          "detected_during_event": false,
+          "earliest_warning_time": null,
+          "nearest_warning_time": null,
+          "warning_episode_onset": null,
+          "earliest_warning_lead_hours": null,
+          "nearest_warning_lead_hours": null,
+          "episode_onset_warning_lead_hours": null,
+          "lead_time_hours": null
+        }
+      ]
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "robust_original_q0.995_p1",
+    "fold": "primary_development",
+    "model_id": "robust_original",
+    "model_type": "robust",
+    "feature_set": "original",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Reservoirs",
+      "Oil_temperature",
+      "Motor_current",
+      "COMP",
+      "DV_eletric",
+      "Towers",
+      "MPG",
+      "LPS",
+      "Pressure_switch",
+      "Oil_level",
+      "Caudal_impulses",
+      "pressure_difference",
+      "TP2_change",
+      "TP2_mean_3",
+      "TP2_std_3",
+      "TP2_mean_12",
+      "TP2_std_12",
+      "TP3_change",
+      "TP3_mean_3",
+      "TP3_std_3",
+      "TP3_mean_12",
+      "TP3_std_12",
+      "H1_change",
+      "H1_mean_3",
+      "H1_std_3",
+      "H1_mean_12",
+      "H1_std_12",
+      "DV_pressure_change",
+      "DV_pressure_mean_3",
+      "DV_pressure_std_3",
+      "DV_pressure_mean_12",
+      "DV_pressure_std_12",
+      "Reservoirs_change",
+      "Reservoirs_mean_3",
+      "Reservoirs_std_3",
+      "Reservoirs_mean_12",
+      "Reservoirs_std_12",
+      "Oil_temperature_change",
+      "Oil_temperature_mean_3",
+      "Oil_temperature_std_3",
+      "Oil_temperature_mean_12",
+      "Oil_temperature_std_12",
+      "Motor_current_change",
+      "Motor_current_mean_3",
+      "Motor_current_std_3",
+      "Motor_current_mean_12",
+      "Motor_current_std_12",
+      "load_transition"
+    ],
+    "feature_count": 52,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-04-01 00:00:00",
+    "evaluation_start": "2020-04-01 00:00:00",
+    "evaluation_end_exclusive": "2020-05-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": null,
+      "subsample": null,
+      "covariance_estimator": null
+    },
+    "quantile": 0.995,
+    "persistence_bins": 1,
+    "threshold": 944.6950709677415,
+    "regime_thresholds": {},
+    "fit_seconds": 0.01403095900604967,
+    "weekly_alert_fraction_sd": 0.008750333285951564,
+    "complexity": 1,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 189,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 455,
+        "issued_alert_fraction": 0.026373626373626374
+      },
+      "off": {
+        "bins": 3136,
+        "issued_alert_fraction": 0.0
+      },
+      "transition": {
+        "bins": 1139,
+        "issued_alert_fraction": 0.0
+      },
+      "unloaded": {
+        "bins": 1314,
+        "issued_alert_fraction": 0.0
+      }
+    },
+    "evaluation": {
+      "start": "2020-04-01 00:00:00",
+      "end_exclusive": "2020-05-01 00:00:00",
+      "assigned_event_count": 1,
+      "event_count": 1,
+      "unobservable_events": 0,
+      "partial_events": 1,
+      "complete_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": 0.0,
+      "alert_episodes": 5,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 5,
+      "unannotated_alert_episodes": 5,
+      "observed_days": 21.64236111111111,
+      "calendar_days": 30.0,
+      "unannotated_observed_days": 20.68402777777778,
+      "unannotated_alerts_per_observed_day": 0.2417324156454591,
+      "unannotated_alerts_per_calendar_day": 0.16666666666666666,
+      "alert_bin_fraction": 0.0019252366436707845,
+      "events": [
+        {
+          "event_id": 1,
+          "start": "2020-04-18 00:00:00",
+          "end": "2020-04-18 23:59:00",
+          "observed_bins": 276,
+          "expected_bins": 288,
+          "coverage": "partial",
+          "coverage_fraction": 0.9583333333333334,
+          "detected_during_event": false,
+          "earliest_warning_time": null,
+          "nearest_warning_time": null,
+          "warning_episode_onset": null,
+          "earliest_warning_lead_hours": null,
+          "nearest_warning_lead_hours": null,
+          "episode_onset_warning_lead_hours": null,
+          "lead_time_hours": null
+        }
+      ]
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "robust_original_q0.995_p3",
+    "fold": "primary_development",
+    "model_id": "robust_original",
+    "model_type": "robust",
+    "feature_set": "original",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Reservoirs",
+      "Oil_temperature",
+      "Motor_current",
+      "COMP",
+      "DV_eletric",
+      "Towers",
+      "MPG",
+      "LPS",
+      "Pressure_switch",
+      "Oil_level",
+      "Caudal_impulses",
+      "pressure_difference",
+      "TP2_change",
+      "TP2_mean_3",
+      "TP2_std_3",
+      "TP2_mean_12",
+      "TP2_std_12",
+      "TP3_change",
+      "TP3_mean_3",
+      "TP3_std_3",
+      "TP3_mean_12",
+      "TP3_std_12",
+      "H1_change",
+      "H1_mean_3",
+      "H1_std_3",
+      "H1_mean_12",
+      "H1_std_12",
+      "DV_pressure_change",
+      "DV_pressure_mean_3",
+      "DV_pressure_std_3",
+      "DV_pressure_mean_12",
+      "DV_pressure_std_12",
+      "Reservoirs_change",
+      "Reservoirs_mean_3",
+      "Reservoirs_std_3",
+      "Reservoirs_mean_12",
+      "Reservoirs_std_12",
+      "Oil_temperature_change",
+      "Oil_temperature_mean_3",
+      "Oil_temperature_std_3",
+      "Oil_temperature_mean_12",
+      "Oil_temperature_std_12",
+      "Motor_current_change",
+      "Motor_current_mean_3",
+      "Motor_current_std_3",
+      "Motor_current_mean_12",
+      "Motor_current_std_12",
+      "load_transition"
+    ],
+    "feature_count": 52,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-04-01 00:00:00",
+    "evaluation_start": "2020-04-01 00:00:00",
+    "evaluation_end_exclusive": "2020-05-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": null,
+      "subsample": null,
+      "covariance_estimator": null
+    },
+    "quantile": 0.995,
+    "persistence_bins": 3,
+    "threshold": 944.6950709677415,
+    "regime_thresholds": {},
+    "fit_seconds": 0.01403095900604967,
+    "weekly_alert_fraction_sd": 0.004507042253521127,
+    "complexity": 1,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 189,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 455,
+        "issued_alert_fraction": 0.008791208791208791
+      },
+      "off": {
+        "bins": 3136,
+        "issued_alert_fraction": 0.0
+      },
+      "transition": {
+        "bins": 1139,
+        "issued_alert_fraction": 0.0
+      },
+      "unloaded": {
+        "bins": 1314,
+        "issued_alert_fraction": 0.0
+      }
+    },
+    "evaluation": {
+      "start": "2020-04-01 00:00:00",
+      "end_exclusive": "2020-05-01 00:00:00",
+      "assigned_event_count": 1,
+      "event_count": 1,
+      "unobservable_events": 0,
+      "partial_events": 1,
+      "complete_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": 0.0,
+      "alert_episodes": 1,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 1,
+      "unannotated_alert_episodes": 1,
+      "observed_days": 21.64236111111111,
+      "calendar_days": 30.0,
+      "unannotated_observed_days": 20.68402777777778,
+      "unannotated_alerts_per_observed_day": 0.04834648312909182,
+      "unannotated_alerts_per_calendar_day": 0.03333333333333333,
+      "alert_bin_fraction": 0.0006417455478902615,
+      "events": [
+        {
+          "event_id": 1,
+          "start": "2020-04-18 00:00:00",
+          "end": "2020-04-18 23:59:00",
+          "observed_bins": 276,
+          "expected_bins": 288,
+          "coverage": "partial",
+          "coverage_fraction": 0.9583333333333334,
+          "detected_during_event": false,
+          "earliest_warning_time": null,
+          "nearest_warning_time": null,
+          "warning_episode_onset": null,
+          "earliest_warning_lead_hours": null,
+          "nearest_warning_lead_hours": null,
+          "episode_onset_warning_lead_hours": null,
+          "lead_time_hours": null
+        }
+      ]
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "robust_raw_q0.98_p1",
+    "fold": "primary_development",
+    "model_id": "robust_raw",
+    "model_type": "robust",
+    "feature_set": "raw",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Reservoirs",
+      "Oil_temperature",
+      "Motor_current",
+      "COMP",
+      "DV_eletric",
+      "Towers",
+      "MPG",
+      "LPS",
+      "Pressure_switch",
+      "Oil_level",
+      "Caudal_impulses"
+    ],
+    "feature_count": 15,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-04-01 00:00:00",
+    "evaluation_start": "2020-04-01 00:00:00",
+    "evaluation_end_exclusive": "2020-05-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": null,
+      "subsample": null,
+      "covariance_estimator": null
+    },
+    "quantile": 0.98,
+    "persistence_bins": 1,
+    "threshold": 913.9881720430106,
+    "regime_thresholds": {},
+    "fit_seconds": 0.0032552909979131073,
+    "weekly_alert_fraction_sd": 0.024027401875674707,
+    "complexity": 1,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 189,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 455,
+        "issued_alert_fraction": 0.23076923076923078
+      },
+      "off": {
+        "bins": 3136,
+        "issued_alert_fraction": 0.0
+      },
+      "transition": {
+        "bins": 1139,
+        "issued_alert_fraction": 0.0
+      },
+      "unloaded": {
+        "bins": 1314,
+        "issued_alert_fraction": 0.0
+      }
+    },
+    "evaluation": {
+      "start": "2020-04-01 00:00:00",
+      "end_exclusive": "2020-05-01 00:00:00",
+      "assigned_event_count": 1,
+      "event_count": 1,
+      "unobservable_events": 0,
+      "partial_events": 1,
+      "complete_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": 0.0,
+      "alert_episodes": 24,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 24,
+      "unannotated_alert_episodes": 24,
+      "observed_days": 21.64236111111111,
+      "calendar_days": 30.0,
+      "unannotated_observed_days": 20.68402777777778,
+      "unannotated_alerts_per_observed_day": 1.1603155950982038,
+      "unannotated_alerts_per_calendar_day": 0.8,
+      "alert_bin_fraction": 0.016845820632119365,
+      "events": [
+        {
+          "event_id": 1,
+          "start": "2020-04-18 00:00:00",
+          "end": "2020-04-18 23:59:00",
+          "observed_bins": 276,
+          "expected_bins": 288,
+          "coverage": "partial",
+          "coverage_fraction": 0.9583333333333334,
+          "detected_during_event": false,
+          "earliest_warning_time": null,
+          "nearest_warning_time": null,
+          "warning_episode_onset": null,
+          "earliest_warning_lead_hours": null,
+          "nearest_warning_lead_hours": null,
+          "episode_onset_warning_lead_hours": null,
+          "lead_time_hours": null
+        }
+      ]
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "robust_raw_q0.98_p3",
+    "fold": "primary_development",
+    "model_id": "robust_raw",
+    "model_type": "robust",
+    "feature_set": "raw",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Reservoirs",
+      "Oil_temperature",
+      "Motor_current",
+      "COMP",
+      "DV_eletric",
+      "Towers",
+      "MPG",
+      "LPS",
+      "Pressure_switch",
+      "Oil_level",
+      "Caudal_impulses"
+    ],
+    "feature_count": 15,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-04-01 00:00:00",
+    "evaluation_start": "2020-04-01 00:00:00",
+    "evaluation_end_exclusive": "2020-05-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": null,
+      "subsample": null,
+      "covariance_estimator": null
+    },
+    "quantile": 0.98,
+    "persistence_bins": 3,
+    "threshold": 913.9881720430106,
+    "regime_thresholds": {},
+    "fit_seconds": 0.0032552909979131073,
+    "weekly_alert_fraction_sd": 0.014623722529271722,
+    "complexity": 1,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 189,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 455,
+        "issued_alert_fraction": 0.13186813186813187
+      },
+      "off": {
+        "bins": 3136,
+        "issued_alert_fraction": 0.0
+      },
+      "transition": {
+        "bins": 1139,
+        "issued_alert_fraction": 0.0
+      },
+      "unloaded": {
+        "bins": 1314,
+        "issued_alert_fraction": 0.0
+      }
+    },
+    "evaluation": {
+      "start": "2020-04-01 00:00:00",
+      "end_exclusive": "2020-05-01 00:00:00",
+      "assigned_event_count": 1,
+      "event_count": 1,
+      "unobservable_events": 0,
+      "partial_events": 1,
+      "complete_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": 0.0,
+      "alert_episodes": 19,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 19,
+      "unannotated_alert_episodes": 19,
+      "observed_days": 21.64236111111111,
+      "calendar_days": 30.0,
+      "unannotated_observed_days": 20.68402777777778,
+      "unannotated_alerts_per_observed_day": 0.9185831794527446,
+      "unannotated_alerts_per_calendar_day": 0.6333333333333333,
+      "alert_bin_fraction": 0.009626183218353923,
+      "events": [
+        {
+          "event_id": 1,
+          "start": "2020-04-18 00:00:00",
+          "end": "2020-04-18 23:59:00",
+          "observed_bins": 276,
+          "expected_bins": 288,
+          "coverage": "partial",
+          "coverage_fraction": 0.9583333333333334,
+          "detected_during_event": false,
+          "earliest_warning_time": null,
+          "nearest_warning_time": null,
+          "warning_episode_onset": null,
+          "earliest_warning_lead_hours": null,
+          "nearest_warning_lead_hours": null,
+          "episode_onset_warning_lead_hours": null,
+          "lead_time_hours": null
+        }
+      ]
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "robust_raw_q0.995_p1",
+    "fold": "primary_development",
+    "model_id": "robust_raw",
+    "model_type": "robust",
+    "feature_set": "raw",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Reservoirs",
+      "Oil_temperature",
+      "Motor_current",
+      "COMP",
+      "DV_eletric",
+      "Towers",
+      "MPG",
+      "LPS",
+      "Pressure_switch",
+      "Oil_level",
+      "Caudal_impulses"
+    ],
+    "feature_count": 15,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-04-01 00:00:00",
+    "evaluation_start": "2020-04-01 00:00:00",
+    "evaluation_end_exclusive": "2020-05-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": null,
+      "subsample": null,
+      "covariance_estimator": null
+    },
+    "quantile": 0.995,
+    "persistence_bins": 1,
+    "threshold": 944.6950709677415,
+    "regime_thresholds": {},
+    "fit_seconds": 0.0032552909979131073,
+    "weekly_alert_fraction_sd": 0.008750333285951564,
+    "complexity": 1,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 189,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 455,
+        "issued_alert_fraction": 0.026373626373626374
+      },
+      "off": {
+        "bins": 3136,
+        "issued_alert_fraction": 0.0
+      },
+      "transition": {
+        "bins": 1139,
+        "issued_alert_fraction": 0.0
+      },
+      "unloaded": {
+        "bins": 1314,
+        "issued_alert_fraction": 0.0
+      }
+    },
+    "evaluation": {
+      "start": "2020-04-01 00:00:00",
+      "end_exclusive": "2020-05-01 00:00:00",
+      "assigned_event_count": 1,
+      "event_count": 1,
+      "unobservable_events": 0,
+      "partial_events": 1,
+      "complete_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": 0.0,
+      "alert_episodes": 5,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 5,
+      "unannotated_alert_episodes": 5,
+      "observed_days": 21.64236111111111,
+      "calendar_days": 30.0,
+      "unannotated_observed_days": 20.68402777777778,
+      "unannotated_alerts_per_observed_day": 0.2417324156454591,
+      "unannotated_alerts_per_calendar_day": 0.16666666666666666,
+      "alert_bin_fraction": 0.0019252366436707845,
+      "events": [
+        {
+          "event_id": 1,
+          "start": "2020-04-18 00:00:00",
+          "end": "2020-04-18 23:59:00",
+          "observed_bins": 276,
+          "expected_bins": 288,
+          "coverage": "partial",
+          "coverage_fraction": 0.9583333333333334,
+          "detected_during_event": false,
+          "earliest_warning_time": null,
+          "nearest_warning_time": null,
+          "warning_episode_onset": null,
+          "earliest_warning_lead_hours": null,
+          "nearest_warning_lead_hours": null,
+          "episode_onset_warning_lead_hours": null,
+          "lead_time_hours": null
+        }
+      ]
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "robust_raw_q0.995_p3",
+    "fold": "primary_development",
+    "model_id": "robust_raw",
+    "model_type": "robust",
+    "feature_set": "raw",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Reservoirs",
+      "Oil_temperature",
+      "Motor_current",
+      "COMP",
+      "DV_eletric",
+      "Towers",
+      "MPG",
+      "LPS",
+      "Pressure_switch",
+      "Oil_level",
+      "Caudal_impulses"
+    ],
+    "feature_count": 15,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-04-01 00:00:00",
+    "evaluation_start": "2020-04-01 00:00:00",
+    "evaluation_end_exclusive": "2020-05-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": null,
+      "subsample": null,
+      "covariance_estimator": null
+    },
+    "quantile": 0.995,
+    "persistence_bins": 3,
+    "threshold": 944.6950709677415,
+    "regime_thresholds": {},
+    "fit_seconds": 0.0032552909979131073,
+    "weekly_alert_fraction_sd": 0.004507042253521127,
+    "complexity": 1,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 189,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 455,
+        "issued_alert_fraction": 0.008791208791208791
+      },
+      "off": {
+        "bins": 3136,
+        "issued_alert_fraction": 0.0
+      },
+      "transition": {
+        "bins": 1139,
+        "issued_alert_fraction": 0.0
+      },
+      "unloaded": {
+        "bins": 1314,
+        "issued_alert_fraction": 0.0
+      }
+    },
+    "evaluation": {
+      "start": "2020-04-01 00:00:00",
+      "end_exclusive": "2020-05-01 00:00:00",
+      "assigned_event_count": 1,
+      "event_count": 1,
+      "unobservable_events": 0,
+      "partial_events": 1,
+      "complete_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": 0.0,
+      "alert_episodes": 1,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 1,
+      "unannotated_alert_episodes": 1,
+      "observed_days": 21.64236111111111,
+      "calendar_days": 30.0,
+      "unannotated_observed_days": 20.68402777777778,
+      "unannotated_alerts_per_observed_day": 0.04834648312909182,
+      "unannotated_alerts_per_calendar_day": 0.03333333333333333,
+      "alert_bin_fraction": 0.0006417455478902615,
+      "events": [
+        {
+          "event_id": 1,
+          "start": "2020-04-18 00:00:00",
+          "end": "2020-04-18 23:59:00",
+          "observed_bins": 276,
+          "expected_bins": 288,
+          "coverage": "partial",
+          "coverage_fraction": 0.9583333333333334,
+          "detected_during_event": false,
+          "earliest_warning_time": null,
+          "nearest_warning_time": null,
+          "warning_episode_onset": null,
+          "earliest_warning_lead_hours": null,
+          "nearest_warning_lead_hours": null,
+          "episode_onset_warning_lead_hours": null,
+          "lead_time_hours": null
+        }
+      ]
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "robust_pressure_q0.98_p1",
+    "fold": "primary_development",
+    "model_id": "robust_pressure",
+    "model_type": "robust",
+    "feature_set": "pressure",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Reservoirs",
+      "pressure_difference",
+      "reservoir_gap",
+      "pressure_variation",
+      "temperature_change_15min",
+      "Motor_current",
+      "Oil_temperature",
+      "DV_eletric"
+    ],
+    "feature_count": 12,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-04-01 00:00:00",
+    "evaluation_start": "2020-04-01 00:00:00",
+    "evaluation_end_exclusive": "2020-05-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": null,
+      "subsample": null,
+      "covariance_estimator": null
+    },
+    "quantile": 0.98,
+    "persistence_bins": 1,
+    "threshold": 913.9881720430106,
+    "regime_thresholds": {},
+    "fit_seconds": 0.0038850419950904325,
+    "weekly_alert_fraction_sd": 0.024027401875674707,
+    "complexity": 1,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 189,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 455,
+        "issued_alert_fraction": 0.23076923076923078
+      },
+      "off": {
+        "bins": 3136,
+        "issued_alert_fraction": 0.0
+      },
+      "transition": {
+        "bins": 1139,
+        "issued_alert_fraction": 0.0
+      },
+      "unloaded": {
+        "bins": 1314,
+        "issued_alert_fraction": 0.0
+      }
+    },
+    "evaluation": {
+      "start": "2020-04-01 00:00:00",
+      "end_exclusive": "2020-05-01 00:00:00",
+      "assigned_event_count": 1,
+      "event_count": 1,
+      "unobservable_events": 0,
+      "partial_events": 1,
+      "complete_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": 0.0,
+      "alert_episodes": 24,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 24,
+      "unannotated_alert_episodes": 24,
+      "observed_days": 21.64236111111111,
+      "calendar_days": 30.0,
+      "unannotated_observed_days": 20.68402777777778,
+      "unannotated_alerts_per_observed_day": 1.1603155950982038,
+      "unannotated_alerts_per_calendar_day": 0.8,
+      "alert_bin_fraction": 0.016845820632119365,
+      "events": [
+        {
+          "event_id": 1,
+          "start": "2020-04-18 00:00:00",
+          "end": "2020-04-18 23:59:00",
+          "observed_bins": 276,
+          "expected_bins": 288,
+          "coverage": "partial",
+          "coverage_fraction": 0.9583333333333334,
+          "detected_during_event": false,
+          "earliest_warning_time": null,
+          "nearest_warning_time": null,
+          "warning_episode_onset": null,
+          "earliest_warning_lead_hours": null,
+          "nearest_warning_lead_hours": null,
+          "episode_onset_warning_lead_hours": null,
+          "lead_time_hours": null
+        }
+      ]
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "robust_pressure_q0.98_p3",
+    "fold": "primary_development",
+    "model_id": "robust_pressure",
+    "model_type": "robust",
+    "feature_set": "pressure",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Reservoirs",
+      "pressure_difference",
+      "reservoir_gap",
+      "pressure_variation",
+      "temperature_change_15min",
+      "Motor_current",
+      "Oil_temperature",
+      "DV_eletric"
+    ],
+    "feature_count": 12,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-04-01 00:00:00",
+    "evaluation_start": "2020-04-01 00:00:00",
+    "evaluation_end_exclusive": "2020-05-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": null,
+      "subsample": null,
+      "covariance_estimator": null
+    },
+    "quantile": 0.98,
+    "persistence_bins": 3,
+    "threshold": 913.9881720430106,
+    "regime_thresholds": {},
+    "fit_seconds": 0.0038850419950904325,
+    "weekly_alert_fraction_sd": 0.014623722529271722,
+    "complexity": 1,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 189,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 455,
+        "issued_alert_fraction": 0.13186813186813187
+      },
+      "off": {
+        "bins": 3136,
+        "issued_alert_fraction": 0.0
+      },
+      "transition": {
+        "bins": 1139,
+        "issued_alert_fraction": 0.0
+      },
+      "unloaded": {
+        "bins": 1314,
+        "issued_alert_fraction": 0.0
+      }
+    },
+    "evaluation": {
+      "start": "2020-04-01 00:00:00",
+      "end_exclusive": "2020-05-01 00:00:00",
+      "assigned_event_count": 1,
+      "event_count": 1,
+      "unobservable_events": 0,
+      "partial_events": 1,
+      "complete_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": 0.0,
+      "alert_episodes": 19,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 19,
+      "unannotated_alert_episodes": 19,
+      "observed_days": 21.64236111111111,
+      "calendar_days": 30.0,
+      "unannotated_observed_days": 20.68402777777778,
+      "unannotated_alerts_per_observed_day": 0.9185831794527446,
+      "unannotated_alerts_per_calendar_day": 0.6333333333333333,
+      "alert_bin_fraction": 0.009626183218353923,
+      "events": [
+        {
+          "event_id": 1,
+          "start": "2020-04-18 00:00:00",
+          "end": "2020-04-18 23:59:00",
+          "observed_bins": 276,
+          "expected_bins": 288,
+          "coverage": "partial",
+          "coverage_fraction": 0.9583333333333334,
+          "detected_during_event": false,
+          "earliest_warning_time": null,
+          "nearest_warning_time": null,
+          "warning_episode_onset": null,
+          "earliest_warning_lead_hours": null,
+          "nearest_warning_lead_hours": null,
+          "episode_onset_warning_lead_hours": null,
+          "lead_time_hours": null
+        }
+      ]
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "robust_pressure_q0.995_p1",
+    "fold": "primary_development",
+    "model_id": "robust_pressure",
+    "model_type": "robust",
+    "feature_set": "pressure",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Reservoirs",
+      "pressure_difference",
+      "reservoir_gap",
+      "pressure_variation",
+      "temperature_change_15min",
+      "Motor_current",
+      "Oil_temperature",
+      "DV_eletric"
+    ],
+    "feature_count": 12,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-04-01 00:00:00",
+    "evaluation_start": "2020-04-01 00:00:00",
+    "evaluation_end_exclusive": "2020-05-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": null,
+      "subsample": null,
+      "covariance_estimator": null
+    },
+    "quantile": 0.995,
+    "persistence_bins": 1,
+    "threshold": 944.6950709677415,
+    "regime_thresholds": {},
+    "fit_seconds": 0.0038850419950904325,
+    "weekly_alert_fraction_sd": 0.008750333285951564,
+    "complexity": 1,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 189,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 455,
+        "issued_alert_fraction": 0.026373626373626374
+      },
+      "off": {
+        "bins": 3136,
+        "issued_alert_fraction": 0.0
+      },
+      "transition": {
+        "bins": 1139,
+        "issued_alert_fraction": 0.0
+      },
+      "unloaded": {
+        "bins": 1314,
+        "issued_alert_fraction": 0.0
+      }
+    },
+    "evaluation": {
+      "start": "2020-04-01 00:00:00",
+      "end_exclusive": "2020-05-01 00:00:00",
+      "assigned_event_count": 1,
+      "event_count": 1,
+      "unobservable_events": 0,
+      "partial_events": 1,
+      "complete_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": 0.0,
+      "alert_episodes": 5,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 5,
+      "unannotated_alert_episodes": 5,
+      "observed_days": 21.64236111111111,
+      "calendar_days": 30.0,
+      "unannotated_observed_days": 20.68402777777778,
+      "unannotated_alerts_per_observed_day": 0.2417324156454591,
+      "unannotated_alerts_per_calendar_day": 0.16666666666666666,
+      "alert_bin_fraction": 0.0019252366436707845,
+      "events": [
+        {
+          "event_id": 1,
+          "start": "2020-04-18 00:00:00",
+          "end": "2020-04-18 23:59:00",
+          "observed_bins": 276,
+          "expected_bins": 288,
+          "coverage": "partial",
+          "coverage_fraction": 0.9583333333333334,
+          "detected_during_event": false,
+          "earliest_warning_time": null,
+          "nearest_warning_time": null,
+          "warning_episode_onset": null,
+          "earliest_warning_lead_hours": null,
+          "nearest_warning_lead_hours": null,
+          "episode_onset_warning_lead_hours": null,
+          "lead_time_hours": null
+        }
+      ]
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "robust_pressure_q0.995_p3",
+    "fold": "primary_development",
+    "model_id": "robust_pressure",
+    "model_type": "robust",
+    "feature_set": "pressure",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Reservoirs",
+      "pressure_difference",
+      "reservoir_gap",
+      "pressure_variation",
+      "temperature_change_15min",
+      "Motor_current",
+      "Oil_temperature",
+      "DV_eletric"
+    ],
+    "feature_count": 12,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-04-01 00:00:00",
+    "evaluation_start": "2020-04-01 00:00:00",
+    "evaluation_end_exclusive": "2020-05-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": null,
+      "subsample": null,
+      "covariance_estimator": null
+    },
+    "quantile": 0.995,
+    "persistence_bins": 3,
+    "threshold": 944.6950709677415,
+    "regime_thresholds": {},
+    "fit_seconds": 0.0038850419950904325,
+    "weekly_alert_fraction_sd": 0.004507042253521127,
+    "complexity": 1,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 189,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 455,
+        "issued_alert_fraction": 0.008791208791208791
+      },
+      "off": {
+        "bins": 3136,
+        "issued_alert_fraction": 0.0
+      },
+      "transition": {
+        "bins": 1139,
+        "issued_alert_fraction": 0.0
+      },
+      "unloaded": {
+        "bins": 1314,
+        "issued_alert_fraction": 0.0
+      }
+    },
+    "evaluation": {
+      "start": "2020-04-01 00:00:00",
+      "end_exclusive": "2020-05-01 00:00:00",
+      "assigned_event_count": 1,
+      "event_count": 1,
+      "unobservable_events": 0,
+      "partial_events": 1,
+      "complete_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": 0.0,
+      "alert_episodes": 1,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 1,
+      "unannotated_alert_episodes": 1,
+      "observed_days": 21.64236111111111,
+      "calendar_days": 30.0,
+      "unannotated_observed_days": 20.68402777777778,
+      "unannotated_alerts_per_observed_day": 0.04834648312909182,
+      "unannotated_alerts_per_calendar_day": 0.03333333333333333,
+      "alert_bin_fraction": 0.0006417455478902615,
+      "events": [
+        {
+          "event_id": 1,
+          "start": "2020-04-18 00:00:00",
+          "end": "2020-04-18 23:59:00",
+          "observed_bins": 276,
+          "expected_bins": 288,
+          "coverage": "partial",
+          "coverage_fraction": 0.9583333333333334,
+          "detected_during_event": false,
+          "earliest_warning_time": null,
+          "nearest_warning_time": null,
+          "warning_episode_onset": null,
+          "earliest_warning_lead_hours": null,
+          "nearest_warning_lead_hours": null,
+          "episode_onset_warning_lead_hours": null,
+          "lead_time_hours": null
+        }
+      ]
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "covariance_pressure_q0.98_p1",
+    "fold": "primary_development",
+    "model_id": "covariance_pressure",
+    "model_type": "covariance",
+    "feature_set": "pressure",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Reservoirs",
+      "pressure_difference",
+      "reservoir_gap",
+      "pressure_variation",
+      "temperature_change_15min",
+      "Motor_current",
+      "Oil_temperature",
+      "DV_eletric"
+    ],
+    "feature_count": 12,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-04-01 00:00:00",
+    "evaluation_start": "2020-04-01 00:00:00",
+    "evaluation_end_exclusive": "2020-05-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": null,
+      "subsample": null,
+      "covariance_estimator": "winsorized training LedoitWolf"
+    },
+    "quantile": 0.98,
+    "persistence_bins": 1,
+    "threshold": 2387057.9547491656,
+    "regime_thresholds": {},
+    "fit_seconds": 0.004938875004881993,
+    "weekly_alert_fraction_sd": 0.022270114655863794,
+    "complexity": 2,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 189,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 455,
+        "issued_alert_fraction": 0.2153846153846154
+      },
+      "off": {
+        "bins": 3136,
+        "issued_alert_fraction": 0.0
+      },
+      "transition": {
+        "bins": 1139,
+        "issued_alert_fraction": 0.0
+      },
+      "unloaded": {
+        "bins": 1314,
+        "issued_alert_fraction": 0.0
+      }
+    },
+    "evaluation": {
+      "start": "2020-04-01 00:00:00",
+      "end_exclusive": "2020-05-01 00:00:00",
+      "assigned_event_count": 1,
+      "event_count": 1,
+      "unobservable_events": 0,
+      "partial_events": 1,
+      "complete_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": 0.0,
+      "alert_episodes": 24,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 24,
+      "unannotated_alert_episodes": 24,
+      "observed_days": 21.64236111111111,
+      "calendar_days": 30.0,
+      "unannotated_observed_days": 20.68402777777778,
+      "unannotated_alerts_per_observed_day": 1.1603155950982038,
+      "unannotated_alerts_per_calendar_day": 0.8,
+      "alert_bin_fraction": 0.015722765923311406,
+      "events": [
+        {
+          "event_id": 1,
+          "start": "2020-04-18 00:00:00",
+          "end": "2020-04-18 23:59:00",
+          "observed_bins": 276,
+          "expected_bins": 288,
+          "coverage": "partial",
+          "coverage_fraction": 0.9583333333333334,
+          "detected_during_event": false,
+          "earliest_warning_time": null,
+          "nearest_warning_time": null,
+          "warning_episode_onset": null,
+          "earliest_warning_lead_hours": null,
+          "nearest_warning_lead_hours": null,
+          "episode_onset_warning_lead_hours": null,
+          "lead_time_hours": null
+        }
+      ]
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "covariance_pressure_q0.98_p3",
+    "fold": "primary_development",
+    "model_id": "covariance_pressure",
+    "model_type": "covariance",
+    "feature_set": "pressure",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Reservoirs",
+      "pressure_difference",
+      "reservoir_gap",
+      "pressure_variation",
+      "temperature_change_15min",
+      "Motor_current",
+      "Oil_temperature",
+      "DV_eletric"
+    ],
+    "feature_count": 12,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-04-01 00:00:00",
+    "evaluation_start": "2020-04-01 00:00:00",
+    "evaluation_end_exclusive": "2020-05-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": null,
+      "subsample": null,
+      "covariance_estimator": "winsorized training LedoitWolf"
+    },
+    "quantile": 0.98,
+    "persistence_bins": 3,
+    "threshold": 2387057.9547491656,
+    "regime_thresholds": {},
+    "fit_seconds": 0.004938875004881993,
+    "weekly_alert_fraction_sd": 0.012836449365201898,
+    "complexity": 2,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 189,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 455,
+        "issued_alert_fraction": 0.11648351648351649
+      },
+      "off": {
+        "bins": 3136,
+        "issued_alert_fraction": 0.0
+      },
+      "transition": {
+        "bins": 1139,
+        "issued_alert_fraction": 0.0
+      },
+      "unloaded": {
+        "bins": 1314,
+        "issued_alert_fraction": 0.0
+      }
+    },
+    "evaluation": {
+      "start": "2020-04-01 00:00:00",
+      "end_exclusive": "2020-05-01 00:00:00",
+      "assigned_event_count": 1,
+      "event_count": 1,
+      "unobservable_events": 0,
+      "partial_events": 1,
+      "complete_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": 0.0,
+      "alert_episodes": 19,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 19,
+      "unannotated_alert_episodes": 19,
+      "observed_days": 21.64236111111111,
+      "calendar_days": 30.0,
+      "unannotated_observed_days": 20.68402777777778,
+      "unannotated_alerts_per_observed_day": 0.9185831794527446,
+      "unannotated_alerts_per_calendar_day": 0.6333333333333333,
+      "alert_bin_fraction": 0.008503128509545965,
+      "events": [
+        {
+          "event_id": 1,
+          "start": "2020-04-18 00:00:00",
+          "end": "2020-04-18 23:59:00",
+          "observed_bins": 276,
+          "expected_bins": 288,
+          "coverage": "partial",
+          "coverage_fraction": 0.9583333333333334,
+          "detected_during_event": false,
+          "earliest_warning_time": null,
+          "nearest_warning_time": null,
+          "warning_episode_onset": null,
+          "earliest_warning_lead_hours": null,
+          "nearest_warning_lead_hours": null,
+          "episode_onset_warning_lead_hours": null,
+          "lead_time_hours": null
+        }
+      ]
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "covariance_pressure_q0.995_p1",
+    "fold": "primary_development",
+    "model_id": "covariance_pressure",
+    "model_type": "covariance",
+    "feature_set": "pressure",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Reservoirs",
+      "pressure_difference",
+      "reservoir_gap",
+      "pressure_variation",
+      "temperature_change_15min",
+      "Motor_current",
+      "Oil_temperature",
+      "DV_eletric"
+    ],
+    "feature_count": 12,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-04-01 00:00:00",
+    "evaluation_start": "2020-04-01 00:00:00",
+    "evaluation_end_exclusive": "2020-05-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": null,
+      "subsample": null,
+      "covariance_estimator": "winsorized training LedoitWolf"
+    },
+    "quantile": 0.995,
+    "persistence_bins": 1,
+    "threshold": 2574296.253547777,
+    "regime_thresholds": {},
+    "fit_seconds": 0.004938875004881993,
+    "weekly_alert_fraction_sd": 0.008750333285951564,
+    "complexity": 2,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 189,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 455,
+        "issued_alert_fraction": 0.026373626373626374
+      },
+      "off": {
+        "bins": 3136,
+        "issued_alert_fraction": 0.0
+      },
+      "transition": {
+        "bins": 1139,
+        "issued_alert_fraction": 0.0
+      },
+      "unloaded": {
+        "bins": 1314,
+        "issued_alert_fraction": 0.0
+      }
+    },
+    "evaluation": {
+      "start": "2020-04-01 00:00:00",
+      "end_exclusive": "2020-05-01 00:00:00",
+      "assigned_event_count": 1,
+      "event_count": 1,
+      "unobservable_events": 0,
+      "partial_events": 1,
+      "complete_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": 0.0,
+      "alert_episodes": 5,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 5,
+      "unannotated_alert_episodes": 5,
+      "observed_days": 21.64236111111111,
+      "calendar_days": 30.0,
+      "unannotated_observed_days": 20.68402777777778,
+      "unannotated_alerts_per_observed_day": 0.2417324156454591,
+      "unannotated_alerts_per_calendar_day": 0.16666666666666666,
+      "alert_bin_fraction": 0.0019252366436707845,
+      "events": [
+        {
+          "event_id": 1,
+          "start": "2020-04-18 00:00:00",
+          "end": "2020-04-18 23:59:00",
+          "observed_bins": 276,
+          "expected_bins": 288,
+          "coverage": "partial",
+          "coverage_fraction": 0.9583333333333334,
+          "detected_during_event": false,
+          "earliest_warning_time": null,
+          "nearest_warning_time": null,
+          "warning_episode_onset": null,
+          "earliest_warning_lead_hours": null,
+          "nearest_warning_lead_hours": null,
+          "episode_onset_warning_lead_hours": null,
+          "lead_time_hours": null
+        }
+      ]
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "covariance_pressure_q0.995_p3",
+    "fold": "primary_development",
+    "model_id": "covariance_pressure",
+    "model_type": "covariance",
+    "feature_set": "pressure",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Reservoirs",
+      "pressure_difference",
+      "reservoir_gap",
+      "pressure_variation",
+      "temperature_change_15min",
+      "Motor_current",
+      "Oil_temperature",
+      "DV_eletric"
+    ],
+    "feature_count": 12,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-04-01 00:00:00",
+    "evaluation_start": "2020-04-01 00:00:00",
+    "evaluation_end_exclusive": "2020-05-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": null,
+      "subsample": null,
+      "covariance_estimator": "winsorized training LedoitWolf"
+    },
+    "quantile": 0.995,
+    "persistence_bins": 3,
+    "threshold": 2574296.253547777,
+    "regime_thresholds": {},
+    "fit_seconds": 0.004938875004881993,
+    "weekly_alert_fraction_sd": 0.004507042253521127,
+    "complexity": 2,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 189,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 455,
+        "issued_alert_fraction": 0.008791208791208791
+      },
+      "off": {
+        "bins": 3136,
+        "issued_alert_fraction": 0.0
+      },
+      "transition": {
+        "bins": 1139,
+        "issued_alert_fraction": 0.0
+      },
+      "unloaded": {
+        "bins": 1314,
+        "issued_alert_fraction": 0.0
+      }
+    },
+    "evaluation": {
+      "start": "2020-04-01 00:00:00",
+      "end_exclusive": "2020-05-01 00:00:00",
+      "assigned_event_count": 1,
+      "event_count": 1,
+      "unobservable_events": 0,
+      "partial_events": 1,
+      "complete_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": 0.0,
+      "alert_episodes": 1,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 1,
+      "unannotated_alert_episodes": 1,
+      "observed_days": 21.64236111111111,
+      "calendar_days": 30.0,
+      "unannotated_observed_days": 20.68402777777778,
+      "unannotated_alerts_per_observed_day": 0.04834648312909182,
+      "unannotated_alerts_per_calendar_day": 0.03333333333333333,
+      "alert_bin_fraction": 0.0006417455478902615,
+      "events": [
+        {
+          "event_id": 1,
+          "start": "2020-04-18 00:00:00",
+          "end": "2020-04-18 23:59:00",
+          "observed_bins": 276,
+          "expected_bins": 288,
+          "coverage": "partial",
+          "coverage_fraction": 0.9583333333333334,
+          "detected_during_event": false,
+          "earliest_warning_time": null,
+          "nearest_warning_time": null,
+          "warning_episode_onset": null,
+          "earliest_warning_lead_hours": null,
+          "nearest_warning_lead_hours": null,
+          "episode_onset_warning_lead_hours": null,
+          "lead_time_hours": null
+        }
+      ]
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "regime_pressure_q0.98_p1",
+    "fold": "primary_development",
+    "model_id": "regime_pressure",
+    "model_type": "regime_robust",
+    "feature_set": "pressure",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Reservoirs",
+      "pressure_difference",
+      "reservoir_gap",
+      "pressure_variation",
+      "temperature_change_15min",
+      "Motor_current",
+      "Oil_temperature",
+      "DV_eletric"
+    ],
+    "feature_count": 12,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-04-01 00:00:00",
+    "evaluation_start": "2020-04-01 00:00:00",
+    "evaluation_end_exclusive": "2020-05-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": null,
+      "subsample": null,
+      "covariance_estimator": null
+    },
+    "quantile": 0.98,
+    "persistence_bins": 1,
+    "threshold": 913.9881720430106,
+    "regime_thresholds": {
+      "off": 95.97205591397852,
+      "transition": 18.33619354838707,
+      "unloaded": 193.37652473118268
+    },
+    "fit_seconds": 0.010452415997860953,
+    "weekly_alert_fraction_sd": 0.027806455665268254,
+    "complexity": 2,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 189,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 455,
+        "issued_alert_fraction": 0.23076923076923078
+      },
+      "off": {
+        "bins": 3136,
+        "issued_alert_fraction": 0.018176020408163265
+      },
+      "transition": {
+        "bins": 1139,
+        "issued_alert_fraction": 0.0553116769095698
+      },
+      "unloaded": {
+        "bins": 1314,
+        "issued_alert_fraction": 0.0182648401826484
+      }
+    },
+    "evaluation": {
+      "start": "2020-04-01 00:00:00",
+      "end_exclusive": "2020-05-01 00:00:00",
+      "assigned_event_count": 1,
+      "event_count": 1,
+      "unobservable_events": 0,
+      "partial_events": 1,
+      "complete_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": 0.0,
+      "alert_episodes": 156,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 156,
+      "unannotated_alert_episodes": 156,
+      "observed_days": 21.64236111111111,
+      "calendar_days": 30.0,
+      "unannotated_observed_days": 20.68402777777778,
+      "unannotated_alerts_per_observed_day": 7.542051368138324,
+      "unannotated_alerts_per_calendar_day": 5.2,
+      "alert_bin_fraction": 0.03994866035616878,
+      "events": [
+        {
+          "event_id": 1,
+          "start": "2020-04-18 00:00:00",
+          "end": "2020-04-18 23:59:00",
+          "observed_bins": 276,
+          "expected_bins": 288,
+          "coverage": "partial",
+          "coverage_fraction": 0.9583333333333334,
+          "detected_during_event": false,
+          "earliest_warning_time": "2020-04-17 08:20:00",
+          "nearest_warning_time": "2020-04-17 08:20:00",
+          "warning_episode_onset": "2020-04-17 08:20:00",
+          "earliest_warning_lead_hours": 15.666666666666666,
+          "nearest_warning_lead_hours": 15.666666666666666,
+          "episode_onset_warning_lead_hours": 15.666666666666666,
+          "lead_time_hours": 15.666666666666666
+        }
+      ]
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "regime_pressure_q0.98_p3",
+    "fold": "primary_development",
+    "model_id": "regime_pressure",
+    "model_type": "regime_robust",
+    "feature_set": "pressure",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Reservoirs",
+      "pressure_difference",
+      "reservoir_gap",
+      "pressure_variation",
+      "temperature_change_15min",
+      "Motor_current",
+      "Oil_temperature",
+      "DV_eletric"
+    ],
+    "feature_count": 12,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-04-01 00:00:00",
+    "evaluation_start": "2020-04-01 00:00:00",
+    "evaluation_end_exclusive": "2020-05-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": null,
+      "subsample": null,
+      "covariance_estimator": null
+    },
+    "quantile": 0.98,
+    "persistence_bins": 3,
+    "threshold": 913.9881720430106,
+    "regime_thresholds": {
+      "off": 95.97205591397852,
+      "transition": 18.33619354838707,
+      "unloaded": 193.37652473118268
+    },
+    "fit_seconds": 0.010452415997860953,
+    "weekly_alert_fraction_sd": 0.014908011079313643,
+    "complexity": 2,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 189,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 455,
+        "issued_alert_fraction": 0.13186813186813187
+      },
+      "off": {
+        "bins": 3136,
+        "issued_alert_fraction": 0.0
+      },
+      "transition": {
+        "bins": 1139,
+        "issued_alert_fraction": 0.001755926251097454
+      },
+      "unloaded": {
+        "bins": 1314,
+        "issued_alert_fraction": 0.0
+      }
+    },
+    "evaluation": {
+      "start": "2020-04-01 00:00:00",
+      "end_exclusive": "2020-05-01 00:00:00",
+      "assigned_event_count": 1,
+      "event_count": 1,
+      "unobservable_events": 0,
+      "partial_events": 1,
+      "complete_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": 0.0,
+      "alert_episodes": 20,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 20,
+      "unannotated_alert_episodes": 20,
+      "observed_days": 21.64236111111111,
+      "calendar_days": 30.0,
+      "unannotated_observed_days": 20.68402777777778,
+      "unannotated_alerts_per_observed_day": 0.9669296625818364,
+      "unannotated_alerts_per_calendar_day": 0.6666666666666666,
+      "alert_bin_fraction": 0.009947055992299053,
+      "events": [
+        {
+          "event_id": 1,
+          "start": "2020-04-18 00:00:00",
+          "end": "2020-04-18 23:59:00",
+          "observed_bins": 276,
+          "expected_bins": 288,
+          "coverage": "partial",
+          "coverage_fraction": 0.9583333333333334,
+          "detected_during_event": false,
+          "earliest_warning_time": null,
+          "nearest_warning_time": null,
+          "warning_episode_onset": null,
+          "earliest_warning_lead_hours": null,
+          "nearest_warning_lead_hours": null,
+          "episode_onset_warning_lead_hours": null,
+          "lead_time_hours": null
+        }
+      ]
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "regime_pressure_q0.995_p1",
+    "fold": "primary_development",
+    "model_id": "regime_pressure",
+    "model_type": "regime_robust",
+    "feature_set": "pressure",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Reservoirs",
+      "pressure_difference",
+      "reservoir_gap",
+      "pressure_variation",
+      "temperature_change_15min",
+      "Motor_current",
+      "Oil_temperature",
+      "DV_eletric"
+    ],
+    "feature_count": 12,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-04-01 00:00:00",
+    "evaluation_start": "2020-04-01 00:00:00",
+    "evaluation_end_exclusive": "2020-05-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": null,
+      "subsample": null,
+      "covariance_estimator": null
+    },
+    "quantile": 0.995,
+    "persistence_bins": 1,
+    "threshold": 944.6950709677415,
+    "regime_thresholds": {
+      "off": 120.99630000000009,
+      "transition": 28.76935483870978,
+      "unloaded": 206.22213333333326
+    },
+    "fit_seconds": 0.010452415997860953,
+    "weekly_alert_fraction_sd": 0.009127418146009682,
+    "complexity": 2,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 189,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 455,
+        "issued_alert_fraction": 0.026373626373626374
+      },
+      "off": {
+        "bins": 3136,
+        "issued_alert_fraction": 0.00701530612244898
+      },
+      "transition": {
+        "bins": 1139,
+        "issued_alert_fraction": 0.025460930640913083
+      },
+      "unloaded": {
+        "bins": 1314,
+        "issued_alert_fraction": 0.00228310502283105
+      }
+    },
+    "evaluation": {
+      "start": "2020-04-01 00:00:00",
+      "end_exclusive": "2020-05-01 00:00:00",
+      "assigned_event_count": 1,
+      "event_count": 1,
+      "unobservable_events": 0,
+      "partial_events": 1,
+      "complete_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": 0.0,
+      "alert_episodes": 53,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 53,
+      "unannotated_alert_episodes": 53,
+      "observed_days": 21.64236111111111,
+      "calendar_days": 30.0,
+      "unannotated_observed_days": 20.68402777777778,
+      "unannotated_alerts_per_observed_day": 2.5623636058418664,
+      "unannotated_alerts_per_calendar_day": 1.7666666666666666,
+      "alert_bin_fraction": 0.010588801540189315,
+      "events": [
+        {
+          "event_id": 1,
+          "start": "2020-04-18 00:00:00",
+          "end": "2020-04-18 23:59:00",
+          "observed_bins": 276,
+          "expected_bins": 288,
+          "coverage": "partial",
+          "coverage_fraction": 0.9583333333333334,
+          "detected_during_event": false,
+          "earliest_warning_time": null,
+          "nearest_warning_time": null,
+          "warning_episode_onset": null,
+          "earliest_warning_lead_hours": null,
+          "nearest_warning_lead_hours": null,
+          "episode_onset_warning_lead_hours": null,
+          "lead_time_hours": null
+        }
+      ]
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "regime_pressure_q0.995_p3",
+    "fold": "primary_development",
+    "model_id": "regime_pressure",
+    "model_type": "regime_robust",
+    "feature_set": "pressure",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Reservoirs",
+      "pressure_difference",
+      "reservoir_gap",
+      "pressure_variation",
+      "temperature_change_15min",
+      "Motor_current",
+      "Oil_temperature",
+      "DV_eletric"
+    ],
+    "feature_count": 12,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-04-01 00:00:00",
+    "evaluation_start": "2020-04-01 00:00:00",
+    "evaluation_end_exclusive": "2020-05-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": null,
+      "subsample": null,
+      "covariance_estimator": null
+    },
+    "quantile": 0.995,
+    "persistence_bins": 3,
+    "threshold": 944.6950709677415,
+    "regime_thresholds": {
+      "off": 120.99630000000009,
+      "transition": 28.76935483870978,
+      "unloaded": 206.22213333333326
+    },
+    "fit_seconds": 0.010452415997860953,
+    "weekly_alert_fraction_sd": 0.00676056338028169,
+    "complexity": 2,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 189,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 455,
+        "issued_alert_fraction": 0.008791208791208791
+      },
+      "off": {
+        "bins": 3136,
+        "issued_alert_fraction": 0.0
+      },
+      "transition": {
+        "bins": 1139,
+        "issued_alert_fraction": 0.001755926251097454
+      },
+      "unloaded": {
+        "bins": 1314,
+        "issued_alert_fraction": 0.0
+      }
+    },
+    "evaluation": {
+      "start": "2020-04-01 00:00:00",
+      "end_exclusive": "2020-05-01 00:00:00",
+      "assigned_event_count": 1,
+      "event_count": 1,
+      "unobservable_events": 0,
+      "partial_events": 1,
+      "complete_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": 0.0,
+      "alert_episodes": 2,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 2,
+      "unannotated_alert_episodes": 2,
+      "observed_days": 21.64236111111111,
+      "calendar_days": 30.0,
+      "unannotated_observed_days": 20.68402777777778,
+      "unannotated_alerts_per_observed_day": 0.09669296625818365,
+      "unannotated_alerts_per_calendar_day": 0.06666666666666667,
+      "alert_bin_fraction": 0.0009626183218353923,
+      "events": [
+        {
+          "event_id": 1,
+          "start": "2020-04-18 00:00:00",
+          "end": "2020-04-18 23:59:00",
+          "observed_bins": 276,
+          "expected_bins": 288,
+          "coverage": "partial",
+          "coverage_fraction": 0.9583333333333334,
+          "detected_during_event": false,
+          "earliest_warning_time": null,
+          "nearest_warning_time": null,
+          "warning_episode_onset": null,
+          "earliest_warning_lead_hours": null,
+          "nearest_warning_lead_hours": null,
+          "episode_onset_warning_lead_hours": null,
+          "lead_time_hours": null
+        }
+      ]
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "isolation_reduced_q0.98_p1",
+    "fold": "primary_development",
+    "model_id": "isolation_reduced",
+    "model_type": "isolation",
+    "feature_set": "reduced",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Oil_temperature",
+      "Motor_current",
+      "reservoir_gap",
+      "pressure_variation",
+      "temperature_change_15min",
+      "Oil_temperature_mean_3",
+      "Motor_current_std_3",
+      "load_transition"
+    ],
+    "feature_count": 12,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-04-01 00:00:00",
+    "evaluation_start": "2020-04-01 00:00:00",
+    "evaluation_end_exclusive": "2020-05-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": 200,
+      "subsample": 256,
+      "covariance_estimator": null
+    },
+    "quantile": 0.98,
+    "persistence_bins": 1,
+    "threshold": 0.7226490442506879,
+    "regime_thresholds": {},
+    "fit_seconds": 0.1422400830051629,
+    "weekly_alert_fraction_sd": 0.014195166797343353,
+    "complexity": 3,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 189,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 455,
+        "issued_alert_fraction": 0.23956043956043957
+      },
+      "off": {
+        "bins": 3136,
+        "issued_alert_fraction": 0.0
+      },
+      "transition": {
+        "bins": 1139,
+        "issued_alert_fraction": 0.000877963125548727
+      },
+      "unloaded": {
+        "bins": 1314,
+        "issued_alert_fraction": 0.0
+      }
+    },
+    "evaluation": {
+      "start": "2020-04-01 00:00:00",
+      "end_exclusive": "2020-05-01 00:00:00",
+      "assigned_event_count": 1,
+      "event_count": 1,
+      "unobservable_events": 0,
+      "partial_events": 1,
+      "complete_events": 0,
+      "detected_events": 1,
+      "event_detection_rate": 1.0,
+      "alert_episodes": 46,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 28,
+      "unannotated_alert_episodes": 28,
+      "observed_days": 21.64236111111111,
+      "calendar_days": 30.0,
+      "unannotated_observed_days": 20.68402777777778,
+      "unannotated_alerts_per_observed_day": 1.353701527614571,
+      "unannotated_alerts_per_calendar_day": 0.9333333333333333,
+      "alert_bin_fraction": 0.017648002566982193,
+      "events": [
+        {
+          "event_id": 1,
+          "start": "2020-04-18 00:00:00",
+          "end": "2020-04-18 23:59:00",
+          "observed_bins": 276,
+          "expected_bins": 288,
+          "coverage": "partial",
+          "coverage_fraction": 0.9583333333333334,
+          "detected_during_event": true,
+          "earliest_warning_time": null,
+          "nearest_warning_time": null,
+          "warning_episode_onset": null,
+          "earliest_warning_lead_hours": null,
+          "nearest_warning_lead_hours": null,
+          "episode_onset_warning_lead_hours": null,
+          "lead_time_hours": null
+        }
+      ]
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "isolation_reduced_q0.98_p3",
+    "fold": "primary_development",
+    "model_id": "isolation_reduced",
+    "model_type": "isolation",
+    "feature_set": "reduced",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Oil_temperature",
+      "Motor_current",
+      "reservoir_gap",
+      "pressure_variation",
+      "temperature_change_15min",
+      "Oil_temperature_mean_3",
+      "Motor_current_std_3",
+      "load_transition"
+    ],
+    "feature_count": 12,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-04-01 00:00:00",
+    "evaluation_start": "2020-04-01 00:00:00",
+    "evaluation_end_exclusive": "2020-05-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": 200,
+      "subsample": 256,
+      "covariance_estimator": null
+    },
+    "quantile": 0.98,
+    "persistence_bins": 3,
+    "threshold": 0.7226490442506879,
+    "regime_thresholds": {},
+    "fit_seconds": 0.1422400830051629,
+    "weekly_alert_fraction_sd": 0.004980825040540282,
+    "complexity": 3,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 189,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 455,
+        "issued_alert_fraction": 0.08351648351648351
+      },
+      "off": {
+        "bins": 3136,
+        "issued_alert_fraction": 0.0
+      },
+      "transition": {
+        "bins": 1139,
+        "issued_alert_fraction": 0.0
+      },
+      "unloaded": {
+        "bins": 1314,
+        "issued_alert_fraction": 0.0
+      }
+    },
+    "evaluation": {
+      "start": "2020-04-01 00:00:00",
+      "end_exclusive": "2020-05-01 00:00:00",
+      "assigned_event_count": 1,
+      "event_count": 1,
+      "unobservable_events": 0,
+      "partial_events": 1,
+      "complete_events": 0,
+      "detected_events": 1,
+      "event_detection_rate": 1.0,
+      "alert_episodes": 13,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 8,
+      "unannotated_alert_episodes": 8,
+      "observed_days": 21.64236111111111,
+      "calendar_days": 30.0,
+      "unannotated_observed_days": 20.68402777777778,
+      "unannotated_alerts_per_observed_day": 0.3867718650327346,
+      "unannotated_alerts_per_calendar_day": 0.26666666666666666,
+      "alert_bin_fraction": 0.0060965827049574844,
+      "events": [
+        {
+          "event_id": 1,
+          "start": "2020-04-18 00:00:00",
+          "end": "2020-04-18 23:59:00",
+          "observed_bins": 276,
+          "expected_bins": 288,
+          "coverage": "partial",
+          "coverage_fraction": 0.9583333333333334,
+          "detected_during_event": true,
+          "earliest_warning_time": null,
+          "nearest_warning_time": null,
+          "warning_episode_onset": null,
+          "earliest_warning_lead_hours": null,
+          "nearest_warning_lead_hours": null,
+          "episode_onset_warning_lead_hours": null,
+          "lead_time_hours": null
+        }
+      ]
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "isolation_reduced_q0.995_p1",
+    "fold": "primary_development",
+    "model_id": "isolation_reduced",
+    "model_type": "isolation",
+    "feature_set": "reduced",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Oil_temperature",
+      "Motor_current",
+      "reservoir_gap",
+      "pressure_variation",
+      "temperature_change_15min",
+      "Oil_temperature_mean_3",
+      "Motor_current_std_3",
+      "load_transition"
+    ],
+    "feature_count": 12,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-04-01 00:00:00",
+    "evaluation_start": "2020-04-01 00:00:00",
+    "evaluation_end_exclusive": "2020-05-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": 200,
+      "subsample": 256,
+      "covariance_estimator": null
+    },
+    "quantile": 0.995,
+    "persistence_bins": 1,
+    "threshold": 0.7292101101443088,
+    "regime_thresholds": {},
+    "fit_seconds": 0.1422400830051629,
+    "weekly_alert_fraction_sd": 0.007466658215248647,
+    "complexity": 3,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 189,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 455,
+        "issued_alert_fraction": 0.02857142857142857
+      },
+      "off": {
+        "bins": 3136,
+        "issued_alert_fraction": 0.0
+      },
+      "transition": {
+        "bins": 1139,
+        "issued_alert_fraction": 0.000877963125548727
+      },
+      "unloaded": {
+        "bins": 1314,
+        "issued_alert_fraction": 0.0
+      }
+    },
+    "evaluation": {
+      "start": "2020-04-01 00:00:00",
+      "end_exclusive": "2020-05-01 00:00:00",
+      "assigned_event_count": 1,
+      "event_count": 1,
+      "unobservable_events": 0,
+      "partial_events": 1,
+      "complete_events": 0,
+      "detected_events": 1,
+      "event_detection_rate": 1.0,
+      "alert_episodes": 9,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 8,
+      "unannotated_alert_episodes": 8,
+      "observed_days": 21.64236111111111,
+      "calendar_days": 30.0,
+      "unannotated_observed_days": 20.68402777777778,
+      "unannotated_alerts_per_observed_day": 0.3867718650327346,
+      "unannotated_alerts_per_calendar_day": 0.26666666666666666,
+      "alert_bin_fraction": 0.0022461094176159154,
+      "events": [
+        {
+          "event_id": 1,
+          "start": "2020-04-18 00:00:00",
+          "end": "2020-04-18 23:59:00",
+          "observed_bins": 276,
+          "expected_bins": 288,
+          "coverage": "partial",
+          "coverage_fraction": 0.9583333333333334,
+          "detected_during_event": true,
+          "earliest_warning_time": null,
+          "nearest_warning_time": null,
+          "warning_episode_onset": null,
+          "earliest_warning_lead_hours": null,
+          "nearest_warning_lead_hours": null,
+          "episode_onset_warning_lead_hours": null,
+          "lead_time_hours": null
+        }
+      ]
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  },
+  {
+    "experiment_id": "isolation_reduced_q0.995_p3",
+    "fold": "primary_development",
+    "model_id": "isolation_reduced",
+    "model_type": "isolation",
+    "feature_set": "reduced",
+    "features": [
+      "TP2",
+      "TP3",
+      "H1",
+      "DV_pressure",
+      "Oil_temperature",
+      "Motor_current",
+      "reservoir_gap",
+      "pressure_variation",
+      "temperature_change_15min",
+      "Oil_temperature_mean_3",
+      "Motor_current_std_3",
+      "load_transition"
+    ],
+    "feature_count": 12,
+    "train_start": "2020-02-01 01:00:00",
+    "train_end_exclusive": "2020-03-01 00:00:00",
+    "calibration_start": "2020-03-01 00:00:00",
+    "calibration_end_exclusive": "2020-04-01 00:00:00",
+    "evaluation_start": "2020-04-01 00:00:00",
+    "evaluation_end_exclusive": "2020-05-01 00:00:00",
+    "hyperparameters": {
+      "seed": 42,
+      "trees": 200,
+      "subsample": 256,
+      "covariance_estimator": null
+    },
+    "quantile": 0.995,
+    "persistence_bins": 3,
+    "threshold": 0.7292101101443088,
+    "regime_thresholds": {},
+    "fit_seconds": 0.1422400830051629,
+    "weekly_alert_fraction_sd": 0.003380281690140845,
+    "complexity": 3,
+    "regime_metrics": {
+      "ambiguous": {
+        "bins": 189,
+        "issued_alert_fraction": 0.0
+      },
+      "loaded": {
+        "bins": 455,
+        "issued_alert_fraction": 0.006593406593406593
+      },
+      "off": {
+        "bins": 3136,
+        "issued_alert_fraction": 0.0
+      },
+      "transition": {
+        "bins": 1139,
+        "issued_alert_fraction": 0.0
+      },
+      "unloaded": {
+        "bins": 1314,
+        "issued_alert_fraction": 0.0
+      }
+    },
+    "evaluation": {
+      "start": "2020-04-01 00:00:00",
+      "end_exclusive": "2020-05-01 00:00:00",
+      "assigned_event_count": 1,
+      "event_count": 1,
+      "unobservable_events": 0,
+      "partial_events": 1,
+      "complete_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": 0.0,
+      "alert_episodes": 1,
+      "crossing_onset_episodes": 0,
+      "unannotated_episode_count": 1,
+      "unannotated_alert_episodes": 1,
+      "observed_days": 21.64236111111111,
+      "calendar_days": 30.0,
+      "unannotated_observed_days": 20.68402777777778,
+      "unannotated_alerts_per_observed_day": 0.04834648312909182,
+      "unannotated_alerts_per_calendar_day": 0.03333333333333333,
+      "alert_bin_fraction": 0.00048130916091769613,
+      "events": [
+        {
+          "event_id": 1,
+          "start": "2020-04-18 00:00:00",
+          "end": "2020-04-18 23:59:00",
+          "observed_bins": 276,
+          "expected_bins": 288,
+          "coverage": "partial",
+          "coverage_fraction": 0.9583333333333334,
+          "detected_during_event": false,
+          "earliest_warning_time": null,
+          "nearest_warning_time": null,
+          "warning_episode_onset": null,
+          "earliest_warning_lead_hours": null,
+          "nearest_warning_lead_hours": null,
+          "episode_onset_warning_lead_hours": null,
+          "lead_time_hours": null
+        }
+      ]
+    },
+    "provenance": "V2 development only; no independent event generalization"
+  }
+]

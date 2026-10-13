@@ -1,0 +1,683 @@
+{
+  "selected_model": "isolation",
+  "selection_basis": "Minimum validation weekly alert-rate variability among two Isolation Forest candidates; baseline retained for comparison. No test-based selection.",
+  "config": {
+    "seed": 42,
+    "resample": "5min",
+    "rolling_windows": [
+      3,
+      12
+    ],
+    "train_end": "2020-03-01",
+    "validation_end": "2020-05-01",
+    "alert_quantile": 0.995,
+    "candidate_max_samples": [
+      256,
+      1024
+    ],
+    "n_estimators": 200,
+    "persistence_bins": 3,
+    "lead_window_hours": 24
+  },
+  "candidates": [
+    {
+      "max_samples": 256,
+      "fit_seconds": 0.22590512500028126,
+      "validation_weekly_alert_rate_std": 0.004229138435279066,
+      "threshold": 0.7236757005747796
+    },
+    {
+      "max_samples": 1024,
+      "fit_seconds": 0.2324372909934027,
+      "validation_weekly_alert_rate_std": 0.004624677660063149,
+      "threshold": 0.7473744958602511
+    }
+  ],
+  "feature_count": 52,
+  "thresholds": {
+    "robust": 940.5193666666664,
+    "isolation": 0.7236757005747796
+  },
+  "partitions": {
+    "train": {
+      "rows": 6828,
+      "start": "2020-02-01 01:00:00",
+      "end": "2020-02-28 23:55:00",
+      "robust": {
+        "event_count": 0,
+        "unobservable_events": 0,
+        "detected_events": 0,
+        "event_detection_rate": null,
+        "alert_episodes": 0,
+        "unannotated_alert_episodes": 0,
+        "unannotated_observed_days": 23.708333333333332,
+        "unannotated_alerts_per_observed_day": 0.0,
+        "alert_bin_fraction": 0.0,
+        "events": []
+      },
+      "isolation": {
+        "event_count": 0,
+        "unobservable_events": 0,
+        "detected_events": 0,
+        "event_detection_rate": null,
+        "alert_episodes": 0,
+        "unannotated_alert_episodes": 0,
+        "unannotated_observed_days": 23.708333333333332,
+        "unannotated_alerts_per_observed_day": 0.0,
+        "alert_bin_fraction": 0.0,
+        "events": []
+      }
+    },
+    "validation": {
+      "rows": 13538,
+      "start": "2020-03-01 05:00:00",
+      "end": "2020-04-30 15:05:00",
+      "robust": {
+        "event_count": 1,
+        "unobservable_events": 0,
+        "detected_events": 0,
+        "event_detection_rate": 0.0,
+        "alert_episodes": 10,
+        "unannotated_alert_episodes": 10,
+        "unannotated_observed_days": 46.048611111111114,
+        "unannotated_alerts_per_observed_day": 0.21716181571407026,
+        "alert_bin_fraction": 0.0017727877086718866,
+        "events": [
+          {
+            "event_id": 1,
+            "start": "2020-04-18 00:00:00",
+            "end": "2020-04-18 23:59:00",
+            "observed_bins": 276,
+            "detected_during_event": false,
+            "lead_time_hours": null
+          }
+        ]
+      },
+      "isolation": {
+        "event_count": 1,
+        "unobservable_events": 0,
+        "detected_events": 0,
+        "event_detection_rate": 0.0,
+        "alert_episodes": 2,
+        "unannotated_alert_episodes": 2,
+        "unannotated_observed_days": 46.048611111111114,
+        "unannotated_alerts_per_observed_day": 0.043432363142814054,
+        "alert_bin_fraction": 0.00014773230905599054,
+        "events": [
+          {
+            "event_id": 1,
+            "start": "2020-04-18 00:00:00",
+            "end": "2020-04-18 23:59:00",
+            "observed_bins": 276,
+            "detected_during_event": false,
+            "lead_time_hours": null
+          }
+        ]
+      }
+    },
+    "test": {
+      "rows": 27585,
+      "start": "2020-05-01 22:25:00",
+      "end": "2020-09-01 04:00:00",
+      "robust": {
+        "event_count": 3,
+        "unobservable_events": 0,
+        "detected_events": 1,
+        "event_detection_rate": 0.3333333333333333,
+        "alert_episodes": 5,
+        "unannotated_alert_episodes": 3,
+        "unannotated_observed_days": 93.39930555555556,
+        "unannotated_alerts_per_observed_day": 0.03212015316554519,
+        "alert_bin_fraction": 0.0007250317201377561,
+        "events": [
+          {
+            "event_id": 2,
+            "start": "2020-05-29 23:30:00",
+            "end": "2020-05-30 06:00:00",
+            "observed_bins": 79,
+            "detected_during_event": false,
+            "lead_time_hours": null
+          },
+          {
+            "event_id": 3,
+            "start": "2020-06-05 10:00:00",
+            "end": "2020-06-07 14:30:00",
+            "observed_bins": 552,
+            "detected_during_event": false,
+            "lead_time_hours": null
+          },
+          {
+            "event_id": 4,
+            "start": "2020-07-15 14:30:00",
+            "end": "2020-07-15 19:00:00",
+            "observed_bins": 55,
+            "detected_during_event": true,
+            "lead_time_hours": null
+          }
+        ]
+      },
+      "isolation": {
+        "event_count": 3,
+        "unobservable_events": 0,
+        "detected_events": 0,
+        "event_detection_rate": 0.0,
+        "alert_episodes": 0,
+        "unannotated_alert_episodes": 0,
+        "unannotated_observed_days": 93.39930555555556,
+        "unannotated_alerts_per_observed_day": 0.0,
+        "alert_bin_fraction": 0.0,
+        "events": [
+          {
+            "event_id": 2,
+            "start": "2020-05-29 23:30:00",
+            "end": "2020-05-30 06:00:00",
+            "observed_bins": 79,
+            "detected_during_event": false,
+            "lead_time_hours": null
+          },
+          {
+            "event_id": 3,
+            "start": "2020-06-05 10:00:00",
+            "end": "2020-06-07 14:30:00",
+            "observed_bins": 552,
+            "detected_during_event": false,
+            "lead_time_hours": null
+          },
+          {
+            "event_id": 4,
+            "start": "2020-07-15 14:30:00",
+            "end": "2020-07-15 19:00:00",
+            "observed_bins": 55,
+            "detected_during_event": false,
+            "lead_time_hours": null
+          }
+        ]
+      }
+    }
+  },
+  "versions": {
+    "python": "3.12.14",
+    "sklearn": "1.6.1",
+    "pandas": "2.2.3",
+    "numpy": "2.2.6"
+  },
+  "calibration_reference": "March-April validation excluding UCI documented failure intervals; unannotated observations are not certified healthy.",
+  "sensitivity": [
+    {
+      "quantile": 0.98,
+      "persistence_bins": 1,
+      "threshold": 0.7036070086693137,
+      "event_count": 1,
+      "unobservable_events": 0,
+      "detected_events": 1,
+      "event_detection_rate": 1.0,
+      "alert_episodes": 180,
+      "unannotated_alert_episodes": 164,
+      "unannotated_observed_days": 46.048611111111114,
+      "unannotated_alerts_per_observed_day": 3.5614537777107524,
+      "alert_bin_fraction": 0.021125720195006647,
+      "events": [
+        {
+          "event_id": 1,
+          "start": "2020-04-18 00:00:00",
+          "end": "2020-04-18 23:59:00",
+          "observed_bins": 276,
+          "detected_during_event": true,
+          "lead_time_hours": null
+        }
+      ]
+    },
+    {
+      "quantile": 0.98,
+      "persistence_bins": 3,
+      "threshold": 0.7036070086693137,
+      "event_count": 1,
+      "unobservable_events": 0,
+      "detected_events": 1,
+      "event_detection_rate": 1.0,
+      "alert_episodes": 22,
+      "unannotated_alert_episodes": 21,
+      "unannotated_observed_days": 46.048611111111114,
+      "unannotated_alerts_per_observed_day": 0.45603981299954754,
+      "alert_bin_fraction": 0.0036933077263997635,
+      "events": [
+        {
+          "event_id": 1,
+          "start": "2020-04-18 00:00:00",
+          "end": "2020-04-18 23:59:00",
+          "observed_bins": 276,
+          "detected_during_event": true,
+          "lead_time_hours": null
+        }
+      ]
+    },
+    {
+      "quantile": 0.98,
+      "persistence_bins": 6,
+      "threshold": 0.7036070086693137,
+      "event_count": 1,
+      "unobservable_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": 0.0,
+      "alert_episodes": 4,
+      "unannotated_alert_episodes": 4,
+      "unannotated_observed_days": 46.048611111111114,
+      "unannotated_alerts_per_observed_day": 0.08686472628562811,
+      "alert_bin_fraction": 0.0008863938543359433,
+      "events": [
+        {
+          "event_id": 1,
+          "start": "2020-04-18 00:00:00",
+          "end": "2020-04-18 23:59:00",
+          "observed_bins": 276,
+          "detected_during_event": false,
+          "lead_time_hours": null
+        }
+      ]
+    },
+    {
+      "quantile": 0.99,
+      "persistence_bins": 1,
+      "threshold": 0.7127831586301044,
+      "event_count": 1,
+      "unobservable_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": 0.0,
+      "alert_episodes": 92,
+      "unannotated_alert_episodes": 92,
+      "unannotated_observed_days": 46.048611111111114,
+      "unannotated_alerts_per_observed_day": 1.9978887045694464,
+      "alert_bin_fraction": 0.00982419855222337,
+      "events": [
+        {
+          "event_id": 1,
+          "start": "2020-04-18 00:00:00",
+          "end": "2020-04-18 23:59:00",
+          "observed_bins": 276,
+          "detected_during_event": false,
+          "lead_time_hours": null
+        }
+      ]
+    },
+    {
+      "quantile": 0.99,
+      "persistence_bins": 3,
+      "threshold": 0.7127831586301044,
+      "event_count": 1,
+      "unobservable_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": 0.0,
+      "alert_episodes": 7,
+      "unannotated_alert_episodes": 7,
+      "unannotated_observed_days": 46.048611111111114,
+      "unannotated_alerts_per_observed_day": 0.15201327099984918,
+      "alert_bin_fraction": 0.0011818584724479244,
+      "events": [
+        {
+          "event_id": 1,
+          "start": "2020-04-18 00:00:00",
+          "end": "2020-04-18 23:59:00",
+          "observed_bins": 276,
+          "detected_during_event": false,
+          "lead_time_hours": null
+        }
+      ]
+    },
+    {
+      "quantile": 0.99,
+      "persistence_bins": 6,
+      "threshold": 0.7127831586301044,
+      "event_count": 1,
+      "unobservable_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": 0.0,
+      "alert_episodes": 1,
+      "unannotated_alert_episodes": 1,
+      "unannotated_observed_days": 46.048611111111114,
+      "unannotated_alerts_per_observed_day": 0.021716181571407027,
+      "alert_bin_fraction": 0.00022159846358398583,
+      "events": [
+        {
+          "event_id": 1,
+          "start": "2020-04-18 00:00:00",
+          "end": "2020-04-18 23:59:00",
+          "observed_bins": 276,
+          "detected_during_event": false,
+          "lead_time_hours": null
+        }
+      ]
+    },
+    {
+      "quantile": 0.995,
+      "persistence_bins": 1,
+      "threshold": 0.7236757005747796,
+      "event_count": 1,
+      "unobservable_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": 0.0,
+      "alert_episodes": 54,
+      "unannotated_alert_episodes": 54,
+      "unannotated_observed_days": 46.048611111111114,
+      "unannotated_alerts_per_observed_day": 1.1726738048559795,
+      "alert_bin_fraction": 0.004949032353375684,
+      "events": [
+        {
+          "event_id": 1,
+          "start": "2020-04-18 00:00:00",
+          "end": "2020-04-18 23:59:00",
+          "observed_bins": 276,
+          "detected_during_event": false,
+          "lead_time_hours": null
+        }
+      ]
+    },
+    {
+      "quantile": 0.995,
+      "persistence_bins": 3,
+      "threshold": 0.7236757005747796,
+      "event_count": 1,
+      "unobservable_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": 0.0,
+      "alert_episodes": 2,
+      "unannotated_alert_episodes": 2,
+      "unannotated_observed_days": 46.048611111111114,
+      "unannotated_alerts_per_observed_day": 0.043432363142814054,
+      "alert_bin_fraction": 0.00014773230905599054,
+      "events": [
+        {
+          "event_id": 1,
+          "start": "2020-04-18 00:00:00",
+          "end": "2020-04-18 23:59:00",
+          "observed_bins": 276,
+          "detected_during_event": false,
+          "lead_time_hours": null
+        }
+      ]
+    },
+    {
+      "quantile": 0.995,
+      "persistence_bins": 6,
+      "threshold": 0.7236757005747796,
+      "event_count": 1,
+      "unobservable_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": 0.0,
+      "alert_episodes": 0,
+      "unannotated_alert_episodes": 0,
+      "unannotated_observed_days": 46.048611111111114,
+      "unannotated_alerts_per_observed_day": 0.0,
+      "alert_bin_fraction": 0.0,
+      "events": [
+        {
+          "event_id": 1,
+          "start": "2020-04-18 00:00:00",
+          "end": "2020-04-18 23:59:00",
+          "observed_bins": 276,
+          "detected_during_event": false,
+          "lead_time_hours": null
+        }
+      ]
+    },
+    {
+      "quantile": 0.999,
+      "persistence_bins": 1,
+      "threshold": 0.7368186683725251,
+      "event_count": 1,
+      "unobservable_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": 0.0,
+      "alert_episodes": 13,
+      "unannotated_alert_episodes": 13,
+      "unannotated_observed_days": 46.048611111111114,
+      "unannotated_alerts_per_observed_day": 0.28231036042829133,
+      "alert_bin_fraction": 0.001034126163391934,
+      "events": [
+        {
+          "event_id": 1,
+          "start": "2020-04-18 00:00:00",
+          "end": "2020-04-18 23:59:00",
+          "observed_bins": 276,
+          "detected_during_event": false,
+          "lead_time_hours": null
+        }
+      ]
+    },
+    {
+      "quantile": 0.999,
+      "persistence_bins": 3,
+      "threshold": 0.7368186683725251,
+      "event_count": 1,
+      "unobservable_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": 0.0,
+      "alert_episodes": 0,
+      "unannotated_alert_episodes": 0,
+      "unannotated_observed_days": 46.048611111111114,
+      "unannotated_alerts_per_observed_day": 0.0,
+      "alert_bin_fraction": 0.0,
+      "events": [
+        {
+          "event_id": 1,
+          "start": "2020-04-18 00:00:00",
+          "end": "2020-04-18 23:59:00",
+          "observed_bins": 276,
+          "detected_during_event": false,
+          "lead_time_hours": null
+        }
+      ]
+    },
+    {
+      "quantile": 0.999,
+      "persistence_bins": 6,
+      "threshold": 0.7368186683725251,
+      "event_count": 1,
+      "unobservable_events": 0,
+      "detected_events": 0,
+      "event_detection_rate": 0.0,
+      "alert_episodes": 0,
+      "unannotated_alert_episodes": 0,
+      "unannotated_observed_days": 46.048611111111114,
+      "unannotated_alerts_per_observed_day": 0.0,
+      "alert_bin_fraction": 0.0,
+      "events": [
+        {
+          "event_id": 1,
+          "start": "2020-04-18 00:00:00",
+          "end": "2020-04-18 23:59:00",
+          "observed_bins": 276,
+          "detected_during_event": false,
+          "lead_time_hours": null
+        }
+      ]
+    }
+  ],
+  "test_months": {
+    "2020-05": {
+      "robust": {
+        "event_count": 1,
+        "unobservable_events": 0,
+        "detected_events": 0,
+        "event_detection_rate": 0.0,
+        "alert_episodes": 2,
+        "unannotated_alert_episodes": 2,
+        "unannotated_observed_days": 23.072916666666668,
+        "unannotated_alerts_per_observed_day": 0.08668171557562077,
+        "alert_bin_fraction": 0.001041046995835812,
+        "events": [
+          {
+            "event_id": 2,
+            "start": "2020-05-29 23:30:00",
+            "end": "2020-05-30 06:00:00",
+            "observed_bins": 79,
+            "detected_during_event": false,
+            "lead_time_hours": null
+          }
+        ]
+      },
+      "isolation": {
+        "event_count": 1,
+        "unobservable_events": 0,
+        "detected_events": 0,
+        "event_detection_rate": 0.0,
+        "alert_episodes": 0,
+        "unannotated_alert_episodes": 0,
+        "unannotated_observed_days": 23.072916666666668,
+        "unannotated_alerts_per_observed_day": 0.0,
+        "alert_bin_fraction": 0.0,
+        "events": [
+          {
+            "event_id": 2,
+            "start": "2020-05-29 23:30:00",
+            "end": "2020-05-30 06:00:00",
+            "observed_bins": 79,
+            "detected_during_event": false,
+            "lead_time_hours": null
+          }
+        ]
+      }
+    },
+    "2020-06": {
+      "robust": {
+        "event_count": 1,
+        "unobservable_events": 0,
+        "detected_events": 0,
+        "event_detection_rate": 0.0,
+        "alert_episodes": 1,
+        "unannotated_alert_episodes": 1,
+        "unannotated_observed_days": 22.27777777777778,
+        "unannotated_alerts_per_observed_day": 0.04488778054862843,
+        "alert_bin_fraction": 0.0007175660160734788,
+        "events": [
+          {
+            "event_id": 3,
+            "start": "2020-06-05 10:00:00",
+            "end": "2020-06-07 14:30:00",
+            "observed_bins": 552,
+            "detected_during_event": false,
+            "lead_time_hours": null
+          }
+        ]
+      },
+      "isolation": {
+        "event_count": 1,
+        "unobservable_events": 0,
+        "detected_events": 0,
+        "event_detection_rate": 0.0,
+        "alert_episodes": 0,
+        "unannotated_alert_episodes": 0,
+        "unannotated_observed_days": 22.27777777777778,
+        "unannotated_alerts_per_observed_day": 0.0,
+        "alert_bin_fraction": 0.0,
+        "events": [
+          {
+            "event_id": 3,
+            "start": "2020-06-05 10:00:00",
+            "end": "2020-06-07 14:30:00",
+            "observed_bins": 552,
+            "detected_during_event": false,
+            "lead_time_hours": null
+          }
+        ]
+      }
+    },
+    "2020-07": {
+      "robust": {
+        "event_count": 1,
+        "unobservable_events": 0,
+        "detected_events": 1,
+        "event_detection_rate": 1.0,
+        "alert_episodes": 2,
+        "unannotated_alert_episodes": 0,
+        "unannotated_observed_days": 24.00347222222222,
+        "unannotated_alerts_per_observed_day": 0.0,
+        "alert_bin_fraction": 0.001148105625717566,
+        "events": [
+          {
+            "event_id": 4,
+            "start": "2020-07-15 14:30:00",
+            "end": "2020-07-15 19:00:00",
+            "observed_bins": 55,
+            "detected_during_event": true,
+            "lead_time_hours": null
+          }
+        ]
+      },
+      "isolation": {
+        "event_count": 1,
+        "unobservable_events": 0,
+        "detected_events": 0,
+        "event_detection_rate": 0.0,
+        "alert_episodes": 0,
+        "unannotated_alert_episodes": 0,
+        "unannotated_observed_days": 24.00347222222222,
+        "unannotated_alerts_per_observed_day": 0.0,
+        "alert_bin_fraction": 0.0,
+        "events": [
+          {
+            "event_id": 4,
+            "start": "2020-07-15 14:30:00",
+            "end": "2020-07-15 19:00:00",
+            "observed_bins": 55,
+            "detected_during_event": false,
+            "lead_time_hours": null
+          }
+        ]
+      }
+    },
+    "2020-08": {
+      "robust": {
+        "event_count": 0,
+        "unobservable_events": 0,
+        "detected_events": 0,
+        "event_detection_rate": null,
+        "alert_episodes": 0,
+        "unannotated_alert_episodes": 0,
+        "unannotated_observed_days": 24.024305555555557,
+        "unannotated_alerts_per_observed_day": 0.0,
+        "alert_bin_fraction": 0.0,
+        "events": []
+      },
+      "isolation": {
+        "event_count": 0,
+        "unobservable_events": 0,
+        "detected_events": 0,
+        "event_detection_rate": null,
+        "alert_episodes": 0,
+        "unannotated_alert_episodes": 0,
+        "unannotated_observed_days": 24.024305555555557,
+        "unannotated_alerts_per_observed_day": 0.0,
+        "alert_bin_fraction": 0.0,
+        "events": []
+      }
+    },
+    "2020-09": {
+      "robust": {
+        "event_count": 0,
+        "unobservable_events": 0,
+        "detected_events": 0,
+        "event_detection_rate": null,
+        "alert_episodes": 0,
+        "unannotated_alert_episodes": 0,
+        "unannotated_observed_days": 0.020833333333333332,
+        "unannotated_alerts_per_observed_day": 0.0,
+        "alert_bin_fraction": 0.0,
+        "events": []
+      },
+      "isolation": {
+        "event_count": 0,
+        "unobservable_events": 0,
+        "detected_events": 0,
+        "event_detection_rate": null,
+        "alert_episodes": 0,
+        "unannotated_alert_episodes": 0,
+        "unannotated_observed_days": 0.020833333333333332,
+        "unannotated_alerts_per_observed_day": 0.0,
+        "alert_bin_fraction": 0.0,
+        "events": []
+      }
+    }
+  },
+  "inference_1000_rows_seconds": 0.01302716699137818,
+  "pipeline_seconds": 25.8097351250035
+}
