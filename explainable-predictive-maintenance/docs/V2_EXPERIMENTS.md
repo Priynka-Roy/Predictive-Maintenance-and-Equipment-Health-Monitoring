@@ -32,4 +32,4 @@ python explainable-predictive-maintenance/scripts/download.py
 python explainable-predictive-maintenance/scripts/run_v2.py
 ```
 
-The [CSV registry](../artifacts/v2/experiments.csv) and [JSON registry](../artifacts/v2/experiments.json) contain all 48 computed development records. [Selection](../artifacts/v2/selection.json) records the 24 two-fold policy summaries and per-model choices. See [computed results](V2_RESULTS.md) for policy ranking and actual measured numbers.
+The [JSON registry](../artifacts/v2/experiments.json) contains all 48 computed fold-level development records. The [CSV comparison](../artifacts/v2/experiments.csv) contains the 24 policy summaries aggregated across the two folds. [Selection](../artifacts/v2/selection.json) records the 24 two-fold policy summaries and per-model choices. See [computed results](V2_RESULTS.md) for policy ranking and actual measured numbers.

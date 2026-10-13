@@ -1,6 +1,6 @@
 # Version 2 computed results
 
-These are actual outputs from the official MetroPT-3 source. [Metrics](../artifacts/v2/metrics.json), [selection](../artifacts/v2/selection.json), [48-record experiment CSV](../artifacts/v2/experiments.csv), [experiment JSON](../artifacts/v2/experiments.json) and [artifact hashes](../artifacts/v2/manifest.json) make the tables checkable. Plan SHA-256: `5e8b9c422e53c945093b054253040cc1c463f49c6fe5f65db6f07cc5dc4f4a1e`.
+These are actual outputs from the official MetroPT-3 source. [Metrics](../artifacts/v2/metrics.json), [selection](../artifacts/v2/selection.json), [24-policy summary CSV](../artifacts/v2/experiments.csv), [experiment JSON](../artifacts/v2/experiments.json) and [artifact hashes](../artifacts/v2/manifest.json) make the tables checkable. Plan SHA-256: `5e8b9c422e53c945093b054253040cc1c463f49c6fe5f65db6f07cc5dc4f4a1e`.
 
 ## Selection and comparison
 
