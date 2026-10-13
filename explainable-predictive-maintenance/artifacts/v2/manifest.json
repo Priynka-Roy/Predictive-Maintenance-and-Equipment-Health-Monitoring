@@ -1,0 +1,26 @@
+{
+  "source_sha256": {
+    "src/industrialguard/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/industrialguard/data.py": "e6cc5a80437a2370ef4a8c8ebe210edc1de18086fd4fed0e269fad1a22e6fdff",
+    "src/industrialguard/evaluation.py": "926efb54f54fd86b94ddce971287e477ce8bdfb3eca6b45fd818192b45f997ca",
+    "src/industrialguard/features.py": "9b7563db92438c5cef51f3260d97617eef855f282e29c7ab411d093463d9a37b",
+    "src/industrialguard/models.py": "08e2f4d14220b9e554d39ee9c87be352dc54def3e103b136b65d967c253659fd",
+    "src/industrialguard/monitoring.py": "d06252db4701beb21eaf8bd17695c40f9de27a4e95add9633623655b1f332b1f",
+    "src/industrialguard/regimes.py": "4c582155693c84ece9555c3e6dacdaa004b2f5634e95bca934d843c174813288",
+    "scripts/run_v2.py": "c1bab23f243d6a33abdc73fe3c66f87e0b3431ca5deb814b66b5d23cedd461f6"
+  },
+  "raw_sha256": "db30ccb4ea402e3c8bf2c99db06e288d4f2a772f6928f9dbe26a920d69793e24",
+  "failure_reports_sha256": "a00c4b3e7951c5b29715351c5f8f5dd62c4107abd9b2d2fad2feb267b912d5b2",
+  "data_license": "CC BY 4.0",
+  "schema_version": 2,
+  "sklearn_version": "1.6.1",
+  "plan_sha256": "5e8b9c422e53c945093b054253040cc1c463f49c6fe5f65db6f07cc5dc4f4a1e",
+  "files": {
+    "models.joblib": "839867f2e55a57110e6e5819a9a5a5b0a1df445604f7b98d18ecb73ebc2590f5",
+    "metrics.json": "0e6f4ae8fad50a726c04600d175b458e4960ea98f9d4d07e167fcfcec10ff02e",
+    "selection.json": "65b9dd8685c4e577787eef3222c8190f0686141e994a68bacd647efcb0185acd",
+    "experiments.json": "16ccfbf9e0916f1d4e84070f4bcb26f6ab48cbf2f2e852de65e79178bdf84a32",
+    "cases.json": "3ab87f0d7aeb3a0a360c4396d2aedf409504fde08a96755efdbc7a83cd4c91ff",
+    "../../data/demo/v2_monitoring.parquet": "8058bc64430abc7f9be35f5ecbf0bd13727015d57c7ea499e612d0ce5af72486"
+  }
+}

@@ -11,3 +11,11 @@ data/processed/*
 .streamlit/secrets.toml
 .env
 *.log
+
+# Preserve the user’s nested project layout without publishing large originals.
+**/data/raw/*
+**/data/processed/*
+!**/data/raw/.gitkeep
+!**/data/processed/.gitkeep
+**/.env
+**/.streamlit/secrets.toml

@@ -2,9 +2,9 @@
 
 **Explainable Predictive Maintenance & Equipment Health Monitoring Platform**
 
-IndustrialGuard AI turns real metro air-compressor telemetry into an interactive historical condition-monitoring application. It combines causal time-series features, an interpretable statistical baseline, Isolation Forest, chronological evaluation, and transparent explanations. The project demonstrates applied statistics and industrial analytics while keeping the boundary between an anomaly and a documented failure explicit.
+IndustrialGuard AI turns real metro air-compressor telemetry into an interactive historical condition-monitoring application. Version 2 combines causal engineering features, global and regime-relative statistical monitoring, regularized covariance, Isolation Forest, chronological development experiments and transparent explanations. The project demonstrates applied statistics and industrial analytics while keeping the boundary between an anomaly and a documented failure explicit.
 
-[Repository](https://github.com/Priynka-Roy/industrialguard-explainable-predictive-maintenance) · [Case study](docs/PORTFOLIO_CASE_STUDY.md) · [Methodology](docs/METHODOLOGY.md) · [Data card](docs/DATA_CARD.md) · [Deployment](docs/DEPLOYMENT.md)
+[Repository](https://github.com/Priynka-Roy/industrialguard-explainable-predictive-maintenance) · [Case study](explainable-predictive-maintenance/docs/PORTFOLIO_CASE_STUDY.md) · [Methodology](explainable-predictive-maintenance/docs/METHODOLOGY.md) · [Data card](explainable-predictive-maintenance/docs/DATA_CARD.md) · [Deployment](explainable-predictive-maintenance/docs/DEPLOYMENT.md)
 
 ## Industrial problem
 
@@ -14,7 +14,7 @@ Unusual pressure, current, and temperature behavior can guide equipment inspecti
 
 - Eight application sections: overview, sensor explorer, anomaly detection, equipment health, explainability, maintenance decision support, model performance, and project context.
 - Interactive historical sensor and score charts, period filtering, alert episodes, and reported-failure context.
-- Validation-relative health and maintenance attention categories, explicitly distinct from failure probability.
+- Calibration-relative health and maintenance attention categories, explicitly distinct from failure probability.
 - Training-standardized feature deviations for explaining unusual observations without claiming physical causes.
 - User-editable illustrative inspection and downtime costs; no claimed observed savings.
 - Reproducible official-source ingestion, data-quality checks, EDA figures, saved models, and compact demo artifacts.
@@ -25,34 +25,30 @@ Unusual pressure, current, and temperature behavior can guide equipment inspecti
 
 Attribution: Davari, N., Veloso, B., Ribeiro, R., & Gama, J. (2021). *MetroPT-3 Dataset*. UCI Machine Learning Repository. The demo aggregates and enriches the source readings; raw files remain unchanged locally and are excluded from Git.
 
-The related [2022 Scientific Data paper](https://doi.org/10.1038/s41597-022-01877-3) describes a different 2022 release. Its labels are not imported into the UCI 2020 history. Sampling and maintenance-date discrepancies are investigated in the [data card](docs/DATA_CARD.md).
+The related [2022 Scientific Data paper](https://doi.org/10.1038/s41597-022-01877-3) describes a different 2022 release. Its labels are not imported into the UCI 2020 history. Sampling and maintenance-date discrepancies are investigated in the [data card](explainable-predictive-maintenance/docs/DATA_CARD.md).
 
-## Methodology
+## Version 2 methodology and evidence
 
-Five-minute trailing windows feed current and pressure differences plus 15-minute and one-hour rolling summaries. Low-coverage windows and outages reset history. Training precedes March 1; March–April validation sets selection and alert thresholds; May onward is held out. Preprocessing fits training only. April's reported event is excluded from the validation calibration reference, while unannotated observations remain imperfect normal evidence.
+February supplies training; March supplies calibration; April supplies primary development. An earlier March development fold assesses workload stability. Training-only fits, causal gap-reset features and calibration-only thresholds precede development-only model/policy selection. The frozen candidate grid compares original, raw, pressure-engineered and reduced representations, with global robust, regularized covariance, regime-relative robust and Isolation Forest methods. Quantiles 0.98/0.995 and persistence 1/3 bins expose sensitivity/workload trade-offs.
 
-The baseline uses the maximum absolute deviation from training medians and interquartile ranges. Isolation Forest compares two subsample sizes using validation-week alert-rate stability. Three consecutive elevated windows issue an alert. Evaluation reports event overlap, descriptive 24-hour preceding warnings, and unannotated alerts per observed telemetry day. The selected forest is not claimed to outperform the baseline on every measure.
+Selection uses a predeclared workload objective, burden limits, anti-silence eligibility and a secondary credit for the single April event. That event cannot establish generalization. May–September was already inspected in V1 and is a **retrospective benchmark**, not a fresh holdout. No external independent validation is available. [Protocol](explainable-predictive-maintenance/docs/V2_METHODOLOGY.md) · [Experiments](explainable-predictive-maintenance/docs/V2_EXPERIMENTS.md) · [Computed V2 results](explainable-predictive-maintenance/docs/V2_RESULTS.md) · [Metric definitions](explainable-predictive-maintenance/docs/EVALUATION_DEFINITIONS.md) · [Technical audit](explainable-predictive-maintenance/docs/V2_TECHNICAL_AUDIT.md).
 
-## Computed evaluation
+The selected V2 covariance policy detects **0/1 April development events and 1/3 retrospective events**, with **15 unannotated retrospective episodes (0.16060/day)**. Reduced Isolation Forest detects **2/3 retrospectively**, with 22 unannotated episodes, but is not chosen by the predefined workload objective. The covariance policy’s July warning is 40 minutes before the reported onset; this remains retrospective evidence. Reliable earlier failure detection is not established.
 
-The exact reproducible results are saved in [metrics.json](artifacts/metrics.json), with configuration, candidate settings, monthly breakdowns, inference timing, and event records. The [statistical EDA report](reports/EDA.md) contains the source audit, operating summaries and event-aligned figures.
+## Preserved Version 1 results
 
-| Frozen policy | Test events detected | Alert episodes | Unannotated episodes | Unannotated alerts / observed day |
-|---|---:|---:|---:|---:|
-| Robust deviation baseline | 1/3 (33.3%) | 5 | 3 | 0.03212 |
-| Isolation Forest (selected on validation) | 0/3 (0%) | 0 | 0 | 0.00000 |
+| Frozen historical policy | Original test events detected | Unannotated episodes | Episodes per unannotated observed day |
+|---|---:|---:|---:|
+| Robust deviation | 1/3 | 3 | 0.03212 |
+| Isolation Forest | 0/3 | 0 | 0.00000 |
 
-Test observations: **27,585** usable five-minute rows, 2020-05-01 22:25:00–2020-09-01 04:00:00. Non-event observed exposure: **93.399 telemetry days**. Neither method issued a qualifying warning within 24 hours before any final-test event. The baseline detected only the July interval during the reported event. **Earlier failure detection was not demonstrated.**
-
-The forest's zero alerts also mean zero detected events. Its conservative validation-stability selection is a poor failure-sensitive policy in this holdout; quiet operation is not evidence of success. The frozen test is retained without tuning it to improve the displayed results.
-
-Only three final-test intervals are available. Unannotated alerts are not confirmed false alarms, and warning lead times can be coincidental. No narrow generalization confidence intervals, calibrated failure probabilities, or remaining-life predictions are claimed.
+Neither V1 method demonstrated a qualifying warning in the preceding 24 hours. The original metrics remain unchanged; [V1 baseline](explainable-predictive-maintenance/docs/V1_BASELINE.md), `docs/v1/`, `artifacts/v1/` and tag `v1.0.0` preserve historical methods and results. V2 evaluation fixes are separately labeled. Unannotated alerts are not confirmed false alarms; scores and relative health are not failure probabilities or remaining life.
 
 ## Application preview
 
-![IndustrialGuard AI overview](docs/assets/overview.jpg)
+![IndustrialGuard AI overview](explainable-predictive-maintenance/docs/assets/v2_overview.jpg)
 
-![Chronological model evaluation](docs/assets/performance.jpg)
+![Versioned model evaluation](explainable-predictive-maintenance/docs/assets/v2_performance.jpg)
 
 **[Open the local app in your browser](http://localhost:8501)**
 
@@ -60,13 +56,13 @@ Start the app using the instructions below before clicking this link. `localhost
 
 ## Run the committed demonstration
 
-Python 3.11 or newer:
+Python 3.11 or newer, from the Git repository root:
 
 ```bash
 python -m venv .venv
 source .venv/bin/activate
-python -m pip install -e '.[dev]'
-streamlit run streamlit_app.py
+python -m pip install -e './explainable-predictive-maintenance[dev]'
+streamlit run explainable-predictive-maintenance/streamlit_app.py
 ```
 
 After starting Streamlit, open **[http://localhost:8501](http://localhost:8501)** in your browser.
@@ -76,15 +72,17 @@ Windows: activate `.venv\Scripts\activate`. The app loads precomputed real-data 
 ## Reproduce the full workflow
 
 ```bash
-python scripts/download.py
-python scripts/run_pipeline.py
-python -m ruff check .
-python -m pytest -q
+python explainable-predictive-maintenance/scripts/download.py
+python explainable-predictive-maintenance/scripts/run_v2.py
+python -m ruff check explainable-predictive-maintenance
+python -m pytest explainable-predictive-maintenance/tests -q
 ```
 
-The pipeline prepares data, generates causal features, fits and selects candidates, evaluates frozen models, creates EDA and event figures, and exports deployment artifacts. Settings live in `configs/pipeline.json`. Downloading requires internet; fitting is CPU based. Reserve several GB of RAM for the original CSV and intermediate frames. See [deployment instructions](docs/DEPLOYMENT.md) for Streamlit Community Cloud.
+The pipeline prepares data, generates causal features, fits and selects candidates, evaluates frozen models, creates EDA and event figures, and exports deployment artifacts. V2 settings live in `configs/v2.json`; separate V2 outputs preserve V1 artifacts. Reproduce historical V1 only in a disposable checkout of `v1.0.0`. Downloading requires internet; fitting is CPU based. Reserve several GB of RAM for the original CSV and intermediate frames. See [deployment instructions](explainable-predictive-maintenance/docs/DEPLOYMENT.md) for Streamlit Community Cloud.
 
 ## Architecture and stack
+
+The project files below live in `explainable-predictive-maintenance/`; GitHub Actions and runtime configuration remain at the Git root.
 
 ```text
 app/                    Streamlit presentation
@@ -97,14 +95,13 @@ data/raw/               Unchanged source files, excluded from Git
 reports/                Data audit, EDA, figures and alert episodes
 tests/                  Automated analytical and application checks
 docs/                   Cards, methodology, case study and deployment
-.github/workflows/      Continuous quality checks
 streamlit_app.py        Deployment entry point
 ```
 
-Python, pandas, NumPy, SciPy, scikit-learn, Plotly, Streamlit, PyArrow, Matplotlib, joblib, pytest, and Ruff. Runtime dependencies are version-pinned. GitHub Actions runs lint and tests. [Architecture details](docs/ARCHITECTURE.md).
+Python, pandas, NumPy, SciPy, scikit-learn, Plotly, Streamlit, PyArrow, Matplotlib, joblib, pytest, and Ruff. Runtime dependencies are version-pinned. GitHub Actions runs lint and tests. [Architecture details](explainable-predictive-maintenance/docs/ARCHITECTURE.md).
 
 ## Limits and next steps
 
-This is a retrospective portfolio demonstration on one machine. Aggregation hides short transients; operating regimes and seasonality can cause legitimate deviations; reports provide incomplete normal labels; three test events cannot establish general reliability. Explanations are associations and maintenance actions remain human decisions. [Full limitations](docs/LIMITATIONS.md) and [model card](docs/MODEL_CARD.md).
+This is a retrospective portfolio demonstration on one machine. Aggregation hides short transients; operating regimes and seasonality can cause legitimate deviations; reports provide incomplete normal labels; three previously inspected benchmark events cannot establish general reliability. Explanations are associations and maintenance actions remain human decisions. [Full limitations](explainable-predictive-maintenance/docs/LIMITATIONS.md) and [model card](explainable-predictive-maintenance/docs/MODEL_CARD.md).
 
-Further work should add expert-reviewed fault and normal labels, prospective multi-machine validation, regime-conditioned models, drift monitoring, and real decision-cost evidence. No industry deployment, production validation, or research novelty is claimed.
+Further work should add expert-reviewed fault and normal labels, prospective multi-machine validation, verified operating-state labels, drift monitoring, and real decision-cost evidence. No industry deployment, production validation, or research novelty is claimed.

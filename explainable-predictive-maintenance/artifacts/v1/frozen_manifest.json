@@ -1,0 +1,16 @@
+{
+  "source_tag": "v1.0.0",
+  "source_commit": "7a5747c59c5f66b1c24e97a083eb57e815e71ee1",
+  "files": {
+    "artifacts/v1/config.json": "3dcb10817c1574c84c7c52fd3d36b0e596b40ff91ae283a610c98560f310beaf",
+    "artifacts/v1/metrics.json": "4c1b426a8bfb9b5fc275b3681bd78cb2376b9b8e2b5b74547c57cfd75d361bb2",
+    "artifacts/v1/model.joblib": "f735cbffaac26b70f854862c6ff96d6818d8896450a588c14b12af0e4d75000d",
+    "docs/v1/DATA_CARD.md": "aa2e4970eb042b2958c6ff5943b859e4d8edf7620c8a2eda9939cc2f68b315c9",
+    "docs/v1/FINAL_REVIEW.md": "e726e7e75d01346d94bfbc17c308f1a7e1d232284e1b0fe100e91dcf0cf62e59",
+    "docs/v1/LIMITATIONS.md": "c57d1036fac3bfd45ab663b837035f12b5c71927fd387304b3bdd81ced05d644",
+    "docs/v1/METHODOLOGY.md": "b07db6d6ca82f082932b80eb747edada086c89c3ae18c7ac06a873d20ac6ca43",
+    "docs/v1/MODEL_CARD.md": "de51db564787dd472e90c32d719821bd725056972460f646276795566c6a4048",
+    "docs/v1/PORTFOLIO_CASE_STUDY.md": "92bd89ec3b17d900e1df19794cecee8bc579a3ccf4ae4b7b1de8e77f61546f0f",
+    "docs/v1/README.md": "f8f57468d91cb4ec429dcdd91e30dab27446c3c09ea61fe6945ff22b4914b74f"
+  }
+}

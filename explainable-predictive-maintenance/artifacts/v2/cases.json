@@ -1,0 +1,23 @@
+[
+  {
+    "title": "April 18 reported air leak",
+    "start": "2020-04-17",
+    "end": "2020-04-19 23:59",
+    "provenance": "V2 development; one reported event",
+    "interpretation": "Inspect pressure, current and temperature with multiple model responses. Reported event overlap is descriptive and does not establish predictive generalization."
+  },
+  {
+    "title": "Unannotated unusual development period",
+    "start": "2020-04-29 19:10:00",
+    "end": "2020-04-30 01:10:00",
+    "provenance": "V2 development; no documented failure within the case window",
+    "interpretation": "Highest selected-model deviation outside reported intervals and their 24-hour context. Lack of a report does not prove a false alarm or healthy condition."
+  },
+  {
+    "title": "July 15 model-policy comparison",
+    "start": "2020-07-14",
+    "end": "2020-07-16 23:59",
+    "provenance": "Previously inspected V1 benchmark; retrospective illustration only",
+    "interpretation": "Compare frozen monitoring policies on the July reported air leak. This case was inspected only after development selection; it cannot establish independent improvement."
+  }
+]
